@@ -1,0 +1,4 @@
+node_modules
+src/images/
+.vscode
+package-lock.json
