@@ -1,5 +1,5 @@
 {
-  "name": "steakhouse",
+  "name": "gulp-bootstrap-starter",
   "version": "1.0.0",
   "description": "An HTML template for steak house",
   "main": "gulpfile.js",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DeanNab175/steakhouse.git"
+    "url": "git+https://github.com/DeanNab175/gulp-bootstrap-starter.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/DeanNab175/steakhouse/issues"
+    "url": "https://github.com/DeanNab175/gulp-bootstrap-starter/issues"
   },
-  "homepage": "https://github.com/DeanNab175/steakhouse#readme",
+  "homepage": "https://github.com/DeanNab175/gulp-bootstrap-starter#readme",
   "devDependencies": {
     "@babel/core": "^7.15.5",
     "@babel/preset-env": "^7.15.6",
