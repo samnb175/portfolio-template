@@ -42,7 +42,7 @@ const path = {
   },
   src: {
     html: './src/**/*.html',
-    img: './src/images/**/*.*',
+    img: './src/images/**/*',
     style: './src/scss/**/*.scss',
     script: './src/js/**/*.js',
     cachebust: `${destFolder}/**/*.html`,
