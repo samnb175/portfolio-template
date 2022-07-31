@@ -1,41 +1,51 @@
 const { src, dest, watch, series, parallel } = require('gulp');
 
-// Sass Plugins
+/********************************************************
+    SASS Plugins
+********************************************************/
 const sass = require('gulp-sass')(require('sass'));
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
-const sourcemaps = require('gulp-sourcemaps');
 
-// Javascript Plugins
+/********************************************************
+    Javascript Plugins
+********************************************************/
 const browserify = require('browserify');
 const babelify = require('babelify');
 const source = require('vinyl-source-stream');
 const buffer = require('vinyl-buffer');
 const uglify = require('gulp-uglify');
 
-// Misc
+/********************************************************
+    Misc Plugins
+********************************************************/
+const sourcemaps = require('gulp-sourcemaps');
 const browserSync = require('browser-sync').create();
 const rename = require("gulp-rename");
 const replace = require('gulp-replace');
 const imagemin = require('gulp-imagemin');
 const del = require('del');
 
+/********************************************************
+    Path variables
+********************************************************/
+const destFolder = './docs';
 const path = {
   docs: {
-    html: './docs/',
-    img: './docs/images/',
-    style: './docs/css/',
-    script: './docs/js/',
-    cachebust: './docs/',
-    fonts: './docs/fonts/'
+    html: `${destFolder}/`,
+    img: `${destFolder}/images/`,
+    style: `${destFolder}/css/`,
+    script: `${destFolder}/js/`,
+    cachebust: `${destFolder}/`,
+    fonts: `${destFolder}/fonts/`
   },
   src: {
     html: './src/**/*.html',
     img: './src/images/**/*.*',
     style: './src/scss/**/*.scss',
     script: './src/js/**/*.js',
-    cachebust: './docs/**/*.html',
+    cachebust: `${destFolder}/**/*.html`,
     fonts: './src/fonts/**/*.*'
   },
   files: {
@@ -44,22 +54,29 @@ const path = {
   folder: {
     script: './src/js/',
   },
-  clean: './docs'
+  clean: `${destFolder}`
 }
 
-/* Copy Files */
+/********************************************************
+    Copy HTML Files
+    from src folder to docs folder
+********************************************************/
 function html() {
   return src(path.src.html).pipe(dest(path.docs.html));
 }
 
-/* Cache Busting */
+/********************************************************
+    Cache Busting
+********************************************************/
 function cacheBust() {
   return src(path.src.cachebust)
     .pipe(replace(/cache_bust=\d+/g, 'cache_bust=' + new Date().getTime()))
     .pipe(dest(path.docs.cachebust));
 }
 
-/* Compile sass to css */
+/********************************************************
+    Compile SASS to CSS
+********************************************************/
 function style() {
   return src(path.src.style)
     .pipe(sourcemaps.init())
@@ -72,9 +89,11 @@ function style() {
     .pipe(browserSync.stream());
 }
 
-/* Bundle script */
+/********************************************************
+    Bundle script
+********************************************************/
 function script(done) {
-  path.files.script.map(function(entry) {
+  path.files.script.map(entry => {
     return browserify({
       entries: [
         'node_modules/@popperjs/core/dist/umd/popper.js',
@@ -100,13 +119,17 @@ function script(done) {
   done();
 }
 
-/* Fonts */
+/********************************************************
+    Copy Fonts to docs folder
+********************************************************/
 function fonts() {
   return src(path.src.fonts)
     .pipe(dest(path.docs.fonts));
 }
 
-/* Optimize images */
+/********************************************************
+    Optimize images
+********************************************************/
 function optimizeImages() {
   return src(path.src.img) // path to image source
     .pipe(imagemin([
@@ -123,14 +146,18 @@ function optimizeImages() {
     .pipe(dest(path.docs.img)); // output ready files
 }
 
-/* Clean task */
+/********************************************************
+    Clean task - delete docs folder
+********************************************************/
 async function clean() {
   const deletedFilePaths = await del(path.clean);
  
   console.log('Deleted files:\n', deletedFilePaths.join('\n'));
 }
 
-/* Watching files */
+/********************************************************
+    Watching files
+********************************************************/
 function serve() {
   browserSync.init({
     server:  {
@@ -146,14 +173,16 @@ function serve() {
   watch(path.src.fonts, series(fonts));
 }
 
-/* Export Tasks */
-exports.cacheBust = cacheBust;
+/********************************************************
+    Export Tasks
+********************************************************/
 exports.html = html;
 exports.style = style;
 exports.script = script;
-exports.fonts = fonts;
-exports.clean = clean;
 exports.optimizeImages = optimizeImages;
+exports.fonts = fonts;
+exports.cacheBust = cacheBust;
+exports.clean = clean;
 exports.serve = serve;
 
 exports.build = series(
@@ -168,24 +197,14 @@ exports.prod = series(
   cacheBust
 );
 
-/* exports.default = series(
-  clean,
-  parallel(html, style, script, optimizeImages, fonts),
-  cacheBust,
-  serve
-); */
-
 /**
- * Running the project commande:
- * dev: "gulp build"
- * prod: "gulp prod"
+ * Running the project command:
+ * For development: npm run dev
+ * For production: npm run prod
  * 
- * Running each task individually,
- * example optimizing the images.
- * Commande: "gulp optimizeImages"
- */
-
-/**
- * commandes to build: npm run build
- * commandes to prod: npm run prod
+ * Running each task individually, example optimizing the images.
+ * Command: gulp optimizeImages
+ * 
+ * To delete destination folder(docs).
+ * Command: npm run clean
  */
