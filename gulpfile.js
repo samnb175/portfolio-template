@@ -82,7 +82,7 @@ function style() {
     .pipe(sourcemaps.init())
     .pipe(postcss([autoprefixer(),cssnano()]))
     // expanded or compressed
-    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+    .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
     .pipe(rename({ suffix: '.min' }))
     .pipe(sourcemaps.write('./maps'))
     .pipe(dest(path.docs.style))
@@ -123,8 +123,17 @@ function script(done) {
     Copy Fonts to docs folder
 ********************************************************/
 function fonts() {
+  fontawesome()
   return src(path.src.fonts)
     .pipe(dest(path.docs.fonts));
+}
+
+/********************************************************
+    Copy Fontawesome to docs folder
+********************************************************/
+function fontawesome() {
+  return src('node_modules/@fortawesome/fontawesome-free/webfonts/*')
+    .pipe(dest(path.docs.fonts + 'webfonts/'));
 }
 
 /********************************************************
