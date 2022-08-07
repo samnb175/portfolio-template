@@ -7,6 +7,7 @@ const sass = require('gulp-sass')(require('sass'));
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
+const purge = require('gulp-purgecss');
 
 /********************************************************
     Javascript Plugins
@@ -26,11 +27,15 @@ const rename = require("gulp-rename");
 const replace = require('gulp-replace');
 const imagemin = require('gulp-imagemin');
 const del = require('del');
+const args = require('yargs').argv; // environment variables
 
 /********************************************************
     Path variables
 ********************************************************/
+const SassOutputStyle = args.env === 'production' ? 'compressed' : 'expanded';
+
 const destFolder = './docs';
+
 const path = {
   docs: {
     html: `${destFolder}/`,
@@ -82,11 +87,45 @@ function style() {
     .pipe(sourcemaps.init())
     .pipe(postcss([autoprefixer(),cssnano()]))
     // expanded or compressed
-    .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
+    .pipe(sass({outputStyle: SassOutputStyle}).on('error', sass.logError))
     .pipe(rename({ suffix: '.min' }))
     .pipe(sourcemaps.write('./maps'))
     .pipe(dest(path.docs.style))
     .pipe(browserSync.stream());
+}
+
+/********************************************************
+    Purge UnusedCSS
+********************************************************/ 
+function purgeCSS() {
+  return src(path.docs.style + "*.min.css")
+    // .pipe(
+    //   rename({
+    //     suffix: ".rejected",
+    //   })
+    // )
+    .pipe(
+      purge({
+        content: [path.docs.html + '**/*.html'],
+        // keyframes: true,
+        // variables: true,
+        // rejected: true,
+        // safelist: [
+        //   /col-[a-z\-0-9]+/gi,
+        //   /alert-[a-z-0-9]+/g,
+        //   /navbar-[a-z\-0-9]+/gi, // navbar-expand-(sizes)
+        //   /nav-[a-z\-0-9]+/gi, // nav-item, nav-link
+        //   /close+/g,
+        //   /collaps?(e|ing)+/g,
+        // ],
+        // whitelistPatterns: [
+        //   /-(leave|enter|appear)(|-(to|from|active))$/,
+        //   /^(?!(|.*?:)cursor-move).+-move$/,
+        //   /^router-link(|-exact)-active$/,
+        // ],
+      })
+    )
+    .pipe(dest(path.docs.style));
 }
 
 /********************************************************
@@ -175,8 +214,8 @@ function serve() {
     notify: false
   });
 
-  watch(path.src.html, series(html, cacheBust)).on('change', browserSync.reload);
-  watch(path.src.style, series(style, cacheBust));
+  watch(path.src.html, series(html, style, purgeCSS, cacheBust)).on('change', browserSync.reload);
+  watch(path.src.style, series(style, purgeCSS, cacheBust));
   watch(path.src.script, series(script, cacheBust));
   watch(path.src.img, series(optimizeImages));
   watch(path.src.fonts, series(fonts));
@@ -187,6 +226,7 @@ function serve() {
 ********************************************************/
 exports.html = html;
 exports.style = style;
+exports.purgeCSS = purgeCSS;
 exports.script = script;
 exports.optimizeImages = optimizeImages;
 exports.fonts = fonts;
@@ -194,8 +234,9 @@ exports.cacheBust = cacheBust;
 exports.clean = clean;
 exports.serve = serve;
 
-exports.build = series(
+exports.dev = series(
   parallel(html, style, script, optimizeImages, fonts),
+  purgeCSS,
   cacheBust,
   serve
 );
@@ -203,6 +244,7 @@ exports.build = series(
 exports.prod = series(
   clean,
   parallel(html, style, script, optimizeImages, fonts),
+  purgeCSS,
   cacheBust
 );
 
