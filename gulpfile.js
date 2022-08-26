@@ -214,8 +214,8 @@ function serve() {
     notify: false
   });
 
-  watch(path.src.html, series(html, style, purgeCSS, cacheBust)).on('change', browserSync.reload);
-  watch(path.src.style, series(style, purgeCSS, cacheBust));
+  watch(path.src.html, series(html, style,/*  purgeCSS, */ cacheBust)).on('change', browserSync.reload);
+  watch(path.src.style, series(style,/*  purgeCSS, */ cacheBust));
   watch(path.src.script, series(script, cacheBust));
   watch(path.src.img, series(optimizeImages));
   watch(path.src.fonts, series(fonts));
@@ -236,7 +236,7 @@ exports.serve = serve;
 
 exports.dev = series(
   parallel(html, style, script, optimizeImages, fonts),
-  purgeCSS,
+  /* purgeCSS, */
   cacheBust,
   serve
 );

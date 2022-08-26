@@ -1,5 +1,12 @@
 .extend-outside-container {
     width: 50vw;
     max-width: 50vw;
-    height: 500px;
+}
+
+.breakout-left {
+    margin-left: calc(-50vw + 100%);
+}
+
+.breakout-right {
+    margin-right: calc(-50vw + 100%);
 }
