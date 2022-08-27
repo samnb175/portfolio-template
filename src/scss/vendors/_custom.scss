@@ -17,8 +17,16 @@ Quickly modify global styling by enabling or disabling optional features.
 /* -------------------------------
 Theme color variables
 ---------------------------------*/
-//$primary: $primaryColor;
+$primary: $primaryColor;
 /* $secondary: $brown-light; */
+
+/* -------------------------------
+Color contrast based on
+background color
+---------------------------------*/
+$min-contrast-ratio: 2.35;
+
+$box-shadow-lg: 0 1rem 3rem rgba($primary, .4);
 
 /* -------------------------------
 Typography
@@ -45,7 +53,6 @@ $h4-font-size:                $font-size-base * 1.5 !default;
 $h5-font-size:                $font-size-base * 1.25 !default;
 $h6-font-size:                $font-size-base !default; */
 
-
 /* -------------------------------
 Accordion override
 ---------------------------------*/
@@ -59,10 +66,16 @@ $accordion-icon-width: 1.875rem; */
 
 
 /* -------------------------------
-Buttons + Forms 
+Buttons + Forms
+    Button border radius
+
 ---------------------------------*/
+$btn-border-radius: 50rem;
+
 /* $input-btn-padding-x: 1.75rem; */
 $input-btn-font-family: $secondaryFont;
+$btn-padding-y: 1rem;
+$btn-padding-x: 1.5rem;
 
 /* -------------------------------
 Spacing
