@@ -34,6 +34,26 @@ Typography
 $font-family-sans-serif: $secondaryFont;
 
 /* -------------------------------
+Base font size
+---------------------------------*/
+$font-size-base: 1rem;
+
+/* -------------------------------
+Headings
+---------------------------------*/
+$headings-font-family: $primaryFont;
+
+/* -------------------------------
+Headings font size
+---------------------------------*/
+$h1-font-size: $font-size-base * 4;
+$h2-font-size: $font-size-base * 2.5;
+/* $h3-font-size:                $font-size-base * 1.75 !default;
+$h4-font-size:                $font-size-base * 1.5 !default;
+$h5-font-size:                $font-size-base * 1.25 !default;
+$h6-font-size:                $font-size-base !default; */
+
+/* -------------------------------
 Accordion override
 ---------------------------------*/
 /* $accordion-icon-color: $primary;
@@ -53,6 +73,7 @@ Buttons + Forms
 $btn-border-radius: 50rem;
 
 /* $input-btn-padding-x: 1.75rem; */
+$input-btn-font-family: $secondaryFont;
 $btn-padding-y: 1rem;
 $btn-padding-x: 1.5rem;
 
@@ -60,11 +81,6 @@ $btn-padding-x: 1.5rem;
 Spacing
 ---------------------------------*/
 $spacer: 1rem;
-
-/* -------------------------------
-Headings
----------------------------------*/
-$headings-font-family: $primaryFont;
 
 /* 3. Include remainder of required Bootstrap stylesheets */
 @import "../../node_modules/bootstrap/scss/variables";
