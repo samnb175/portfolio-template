@@ -1,10 +1,20 @@
 @charset "UTF-8";
+/*=========================================
+    THEME COLORS
+=========================================*/
 /* -------------------------------
-Theme colors 
+Colors 
+---------------------------------*/
+/*=========================================
+    THEME FONTS
+=========================================*/
+/* -------------------------------
+Font family 
 ---------------------------------*/
 /* -------------------------------
-Theme fonts 
----------------------------------*/ /*=========================================
+Font weight 
+---------------------------------*/
+/*=========================================
     BOOTSTRAP OVERRIDES
 =========================================*/
 /**
@@ -33,6 +43,9 @@ Typography
 ---------------------------------*/
 /* -------------------------------
 Base font size
+---------------------------------*/
+/* -------------------------------
+Font weight
 ---------------------------------*/
 /* -------------------------------
 Headings
@@ -153,6 +166,23 @@ $custom-spacers: (
 /**
 *   6. Include any default utilities api overrides here
 */
+/* -------------------------------
+Enable hover and focus state
+on box shadow
+---------------------------------*/
+/* -------------------------------
+Add more font weights:
+100, 500 and 800
+---------------------------------*/
+/* -------------------------------
+Add more viewport heights
+---------------------------------*/
+/* -------------------------------
+Add more widths
+---------------------------------*/
+/* -------------------------------
+Add object-fit utility classes
+---------------------------------*/
 .align-baseline {
   vertical-align: baseline !important;
 }
@@ -269,7 +299,23 @@ $custom-spacers: (
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 
+.shadow-hover:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.shadow-focus:focus {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
 .shadow-sm {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.shadow-sm-hover:hover {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.shadow-sm-focus:focus {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
 }
 
@@ -277,7 +323,23 @@ $custom-spacers: (
   box-shadow: 0 1rem 3rem rgba(254, 135, 66, 0.4) !important;
 }
 
+.shadow-lg-hover:hover {
+  box-shadow: 0 1rem 3rem rgba(254, 135, 66, 0.4) !important;
+}
+
+.shadow-lg-focus:focus {
+  box-shadow: 0 1rem 3rem rgba(254, 135, 66, 0.4) !important;
+}
+
 .shadow-none {
+  box-shadow: none !important;
+}
+
+.shadow-none-hover:hover {
+  box-shadow: none !important;
+}
+
+.shadow-none-focus:focus {
   box-shadow: none !important;
 }
 
@@ -506,6 +568,18 @@ $custom-spacers: (
   width: auto !important;
 }
 
+.w-35 {
+  width: 35% !important;
+}
+
+.w-65 {
+  width: 65% !important;
+}
+
+.w-85 {
+  width: 85% !important;
+}
+
 .mw-100 {
   max-width: 100% !important;
 }
@@ -544,6 +618,34 @@ $custom-spacers: (
 
 .vh-100 {
   height: 100vh !important;
+}
+
+.vh-90 {
+  height: 90vh !important;
+}
+
+.vh-80 {
+  height: 80vh !important;
+}
+
+.vh-75 {
+  height: 75vh !important;
+}
+
+.vh-65 {
+  height: 65vh !important;
+}
+
+.vh-50 {
+  height: 50vh !important;
+}
+
+.vh-40 {
+  height: 40vh !important;
+}
+
+.vh-25 {
+  height: 25vh !important;
 }
 
 .min-vh-100 {
@@ -1369,7 +1471,7 @@ $custom-spacers: (
 }
 
 .fw-lighter {
-  font-weight: lighter !important;
+  font-weight: 200 !important;
 }
 
 .fw-normal {
@@ -1385,7 +1487,19 @@ $custom-spacers: (
 }
 
 .fw-bolder {
-  font-weight: bolder !important;
+  font-weight: 900 !important;
+}
+
+.fw-100 {
+  font-weight: 100 !important;
+}
+
+.fw-500 {
+  font-weight: 500 !important;
+}
+
+.fw-800 {
+  font-weight: 800 !important;
 }
 
 .lh-1 {
@@ -1712,6 +1826,26 @@ $custom-spacers: (
 
 .invisible {
   visibility: hidden !important;
+}
+
+.object-fit-none {
+  object-fit: none !important;
+}
+
+.object-fit-fill {
+  object-fit: fill !important;
+}
+
+.object-fit-contain {
+  object-fit: contain !important;
+}
+
+.object-fit-cover {
+  object-fit: cover !important;
+}
+
+.object-fit-scale-down {
+  object-fit: scale-down !important;
 }
 
 @media (min-width: 576px) {
@@ -5187,7 +5321,7 @@ blockquote {
 
 b,
 strong {
-  font-weight: bolder;
+  font-weight: 900;
 }
 
 small, .small {
@@ -12109,7 +12243,23 @@ textarea.form-control-lg {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 
+.shadow-hover:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.shadow-focus:focus {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
 .shadow-sm {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.shadow-sm-hover:hover {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.shadow-sm-focus:focus {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
 }
 
@@ -12117,7 +12267,23 @@ textarea.form-control-lg {
   box-shadow: 0 1rem 3rem rgba(254, 135, 66, 0.4) !important;
 }
 
+.shadow-lg-hover:hover {
+  box-shadow: 0 1rem 3rem rgba(254, 135, 66, 0.4) !important;
+}
+
+.shadow-lg-focus:focus {
+  box-shadow: 0 1rem 3rem rgba(254, 135, 66, 0.4) !important;
+}
+
 .shadow-none {
+  box-shadow: none !important;
+}
+
+.shadow-none-hover:hover {
+  box-shadow: none !important;
+}
+
+.shadow-none-focus:focus {
   box-shadow: none !important;
 }
 
@@ -12346,6 +12512,18 @@ textarea.form-control-lg {
   width: auto !important;
 }
 
+.w-35 {
+  width: 35% !important;
+}
+
+.w-65 {
+  width: 65% !important;
+}
+
+.w-85 {
+  width: 85% !important;
+}
+
 .mw-100 {
   max-width: 100% !important;
 }
@@ -12384,6 +12562,34 @@ textarea.form-control-lg {
 
 .vh-100 {
   height: 100vh !important;
+}
+
+.vh-90 {
+  height: 90vh !important;
+}
+
+.vh-80 {
+  height: 80vh !important;
+}
+
+.vh-75 {
+  height: 75vh !important;
+}
+
+.vh-65 {
+  height: 65vh !important;
+}
+
+.vh-50 {
+  height: 50vh !important;
+}
+
+.vh-40 {
+  height: 40vh !important;
+}
+
+.vh-25 {
+  height: 25vh !important;
 }
 
 .min-vh-100 {
@@ -13209,7 +13415,7 @@ textarea.form-control-lg {
 }
 
 .fw-lighter {
-  font-weight: lighter !important;
+  font-weight: 200 !important;
 }
 
 .fw-normal {
@@ -13225,7 +13431,19 @@ textarea.form-control-lg {
 }
 
 .fw-bolder {
-  font-weight: bolder !important;
+  font-weight: 900 !important;
+}
+
+.fw-100 {
+  font-weight: 100 !important;
+}
+
+.fw-500 {
+  font-weight: 500 !important;
+}
+
+.fw-800 {
+  font-weight: 800 !important;
 }
 
 .lh-1 {
@@ -13552,6 +13770,26 @@ textarea.form-control-lg {
 
 .invisible {
   visibility: hidden !important;
+}
+
+.object-fit-none {
+  object-fit: none !important;
+}
+
+.object-fit-fill {
+  object-fit: fill !important;
+}
+
+.object-fit-contain {
+  object-fit: contain !important;
+}
+
+.object-fit-cover {
+  object-fit: cover !important;
+}
+
+.object-fit-scale-down {
+  object-fit: scale-down !important;
 }
 
 @media (min-width: 576px) {
@@ -29908,7 +30146,13 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
-/* breakouts */
+/* -------------------------------
+Breakout class
+-----------------
+Use breakout class to extend element
+outside a container
+---------------------------------*/
+/* full width breakout */
 .breakout {
   width: 100vw;
   position: relative;
@@ -29918,10 +30162,12 @@ readers do not read off random characters that represent icons */
   margin-right: -50vw;
 }
 
+/* left breakout */
 .breakout-left {
   margin-left: calc(-50vw + 100%);
 }
 
+/* right breakout */
 .breakout-right {
   margin-right: calc(-50vw + 100%);
 }
@@ -29932,6 +30178,12 @@ readers do not read off random characters that represent icons */
 }
 .image-wrap img {
   width: 100%;
+}
+
+.object-fit-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .logo-wrap {
