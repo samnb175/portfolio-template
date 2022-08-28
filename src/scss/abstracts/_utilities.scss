@@ -1,4 +1,11 @@
-/* breakouts */
+/* -------------------------------
+Breakout class
+-----------------
+Use breakout class to extend element
+outside a container
+---------------------------------*/
+
+/* full width breakout */
 .breakout {
     width: 100vw;
     position: relative;
@@ -8,10 +15,12 @@
     margin-right: -50vw;
 }
 
+/* left breakout */
 .breakout-left {
     margin-left: calc(-50vw + 100%);
 }
 
+/* right breakout */
 .breakout-right {
     margin-right: calc(-50vw + 100%);
 }
