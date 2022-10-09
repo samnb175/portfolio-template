@@ -50,6 +50,21 @@ $font-family-sans-serif: $secondary-font;
 Base font size
 ---------------------------------*/
 $font-size-base: 1rem;
+/* $font-size-root: .625rem; */
+
+
+/* -------------------------------
+Font weight
+---------------------------------*/
+$font-weight-lighter: $font-weight-200;
+$font-weight-light: $font-weight-300;
+$font-weight-normal: $font-weight-400;
+$font-weight-semibold: $font-weight-600;
+$font-weight-bold: $font-weight-700;
+$font-weight-bolder: $font-weight-900;
+
+/* scss-docs-start font-sizes */
+$font-sizes: $custom-font-sizes;
 
 
 /* -------------------------------
@@ -73,11 +88,11 @@ $headings-font-family: $primary-font;
 Headings font size
 ---------------------------------*/
 $h1-font-size: $font-size-base * 4;
-$h2-font-size: $font-size-base * 2.5;
-/* $h3-font-size:                $font-size-base * 1.75 !default;
-$h4-font-size:                $font-size-base * 1.5 !default;
-$h5-font-size:                $font-size-base * 1.25 !default;
-$h6-font-size:                $font-size-base !default; */
+$h2-font-size: $font-size-base * 3;
+$h3-font-size: $font-size-base * 2.5;
+$h4-font-size: $font-size-base * 1.75;
+$h5-font-size: $font-size-base * 1.5;
+$h6-font-size: $font-size-base;
 
 
 /* -------------------------------
@@ -98,11 +113,15 @@ Buttons + Forms
 
 ---------------------------------*/
 $btn-border-radius: 50rem;
+$btn-border-radius-sm: 50rem;
+$btn-border-radius-lg: 50rem;
 
 /* $input-btn-padding-x: 1.75rem; */
 $input-btn-font-family: $secondary-font;
-$btn-padding-y: 1rem;
+$btn-padding-y: map-get($custom-font-sizes, 3);
 $btn-padding-x: 1.5rem;
+$btn-font-size: map-get($custom-font-sizes, 3);
+$btn-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, transform .15s ease-in-out;
 
 
 /* -------------------------------

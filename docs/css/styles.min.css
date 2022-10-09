@@ -14,6 +14,9 @@ Font family
 /* -------------------------------
 Font weight 
 ---------------------------------*/
+/* -------------------------------
+Font Sizes 
+---------------------------------*/
 /*=========================================
     BOOTSTRAP OVERRIDES
 =========================================*/
@@ -44,6 +47,11 @@ Typography
 /* -------------------------------
 Base font size
 ---------------------------------*/
+/* $font-size-root: .625rem; */
+/* -------------------------------
+Font weight
+---------------------------------*/
+/* scss-docs-start font-sizes */
 /* -------------------------------
 Font weight
 ---------------------------------*/
@@ -53,10 +61,6 @@ Headings
 /* -------------------------------
 Headings font size
 ---------------------------------*/
-/* $h3-font-size:                $font-size-base * 1.75 !default;
-$h4-font-size:                $font-size-base * 1.5 !default;
-$h5-font-size:                $font-size-base * 1.25 !default;
-$h6-font-size:                $font-size-base !default; */
 /* -------------------------------
 Accordion override
 ---------------------------------*/
@@ -1435,27 +1439,103 @@ Add object-fit utility classes
 }
 
 .fs-1 {
-  font-size: calc(1.525rem + 3.3vw) !important;
+  font-size: 0.65rem !important;
 }
 
 .fs-2 {
-  font-size: calc(1.375rem + 1.5vw) !important;
+  font-size: 0.7rem !important;
 }
 
 .fs-3 {
-  font-size: calc(1.3rem + 0.6vw) !important;
+  font-size: 0.8rem !important;
 }
 
 .fs-4 {
-  font-size: calc(1.275rem + 0.3vw) !important;
+  font-size: 0.9rem !important;
 }
 
 .fs-5 {
-  font-size: 1.25rem !important;
+  font-size: 1rem !important;
 }
 
 .fs-6 {
-  font-size: 1rem !important;
+  font-size: 1.25rem !important;
+}
+
+.fs-7 {
+  font-size: calc(1.275rem + 0.3vw) !important;
+}
+
+.fs-8 {
+  font-size: calc(1.3rem + 0.6vw) !important;
+}
+
+.fs-9 {
+  font-size: calc(1.325rem + 0.9vw) !important;
+}
+
+.fs-10 {
+  font-size: calc(1.35rem + 1.2vw) !important;
+}
+
+.fs-11 {
+  font-size: calc(1.375rem + 1.5vw) !important;
+}
+
+.fs-12 {
+  font-size: calc(1.4rem + 1.8vw) !important;
+}
+
+.fs-13 {
+  font-size: calc(1.425rem + 2.1vw) !important;
+}
+
+.fs-14 {
+  font-size: calc(1.45rem + 2.4vw) !important;
+}
+
+.fs-15 {
+  font-size: calc(1.475rem + 2.7vw) !important;
+}
+
+.fs-16 {
+  font-size: calc(1.5rem + 3vw) !important;
+}
+
+.fs-17 {
+  font-size: calc(1.525rem + 3.3vw) !important;
+}
+
+.fs-18 {
+  font-size: calc(1.55rem + 3.6vw) !important;
+}
+
+.fs-19 {
+  font-size: calc(1.575rem + 3.9vw) !important;
+}
+
+.fs-20 {
+  font-size: calc(1.6rem + 4.2vw) !important;
+}
+
+.fs-21 {
+  font-size: calc(1.625rem + 4.5vw) !important;
+}
+
+.fs-22 {
+  font-size: calc(1.65rem + 4.8vw) !important;
+}
+
+.fs-23 {
+  font-size: calc(1.675rem + 5.1vw) !important;
+}
+
+.fs-24 {
+  font-size: calc(1.7rem + 5.4vw) !important;
+}
+
+.fs-25 {
+  font-size: calc(1.725rem + 5.7vw) !important;
 }
 
 .fst-italic {
@@ -5064,17 +5144,62 @@ Add object-fit utility classes
   }
 }
 @media (min-width: 1200px) {
-  .fs-1 {
-    font-size: 4rem !important;
+  .fs-7 {
+    font-size: 1.5rem !important;
   }
-  .fs-2 {
-    font-size: 2.5rem !important;
-  }
-  .fs-3 {
+  .fs-8 {
     font-size: 1.75rem !important;
   }
-  .fs-4 {
-    font-size: 1.5rem !important;
+  .fs-9 {
+    font-size: 2rem !important;
+  }
+  .fs-10 {
+    font-size: 2.25rem !important;
+  }
+  .fs-11 {
+    font-size: 2.5rem !important;
+  }
+  .fs-12 {
+    font-size: 2.75rem !important;
+  }
+  .fs-13 {
+    font-size: 3rem !important;
+  }
+  .fs-14 {
+    font-size: 3.25rem !important;
+  }
+  .fs-15 {
+    font-size: 3.5rem !important;
+  }
+  .fs-16 {
+    font-size: 3.75rem !important;
+  }
+  .fs-17 {
+    font-size: 4rem !important;
+  }
+  .fs-18 {
+    font-size: 4.25rem !important;
+  }
+  .fs-19 {
+    font-size: 4.5rem !important;
+  }
+  .fs-20 {
+    font-size: 4.75rem !important;
+  }
+  .fs-21 {
+    font-size: 5rem !important;
+  }
+  .fs-22 {
+    font-size: 5.25rem !important;
+  }
+  .fs-23 {
+    font-size: 5.5rem !important;
+  }
+  .fs-24 {
+    font-size: 5.75rem !important;
+  }
+  .fs-25 {
+    font-size: 6rem !important;
   }
 }
 @media print {
@@ -5236,34 +5361,39 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font-size: calc(1.375rem + 1.5vw);
+  font-size: calc(1.425rem + 2.1vw);
 }
 @media (min-width: 1200px) {
   h2, .h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 }
 
 h3, .h3 {
-  font-size: calc(1.3rem + 0.6vw);
+  font-size: calc(1.375rem + 1.5vw);
 }
 @media (min-width: 1200px) {
   h3, .h3 {
-    font-size: 1.75rem;
+    font-size: 2.5rem;
   }
 }
 
 h4, .h4 {
-  font-size: calc(1.275rem + 0.3vw);
+  font-size: calc(1.3rem + 0.6vw);
 }
 @media (min-width: 1200px) {
   h4, .h4 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
 }
 
 h5, .h5 {
-  font-size: 1.25rem;
+  font-size: calc(1.275rem + 0.3vw);
+}
+@media (min-width: 1200px) {
+  h5, .h5 {
+    font-size: 1.5rem;
+  }
 }
 
 h6, .h6 {
@@ -7302,7 +7432,7 @@ progress {
   border-width: 0;
   border-inline-end-width: 1px;
   border-radius: 0;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, transform 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
   .form-control::file-selector-button {
@@ -7993,9 +8123,9 @@ textarea.form-control-lg {
 
 .btn {
   --bs-btn-padding-x: 1.5rem;
-  --bs-btn-padding-y: 1rem;
+  --bs-btn-padding-y: 0.8rem;
   --bs-btn-font-family: Noto Sans, sans-serif;
-  --bs-btn-font-size: 1rem;
+  --bs-btn-font-size: 0.8rem;
   --bs-btn-font-weight: 400;
   --bs-btn-line-height: 1.5;
   --bs-btn-color: #212529;
@@ -8021,7 +8151,7 @@ textarea.form-control-lg {
   border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
   border-radius: var(--bs-btn-border-radius);
   background-color: var(--bs-btn-bg);
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, transform 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
   .btn {
@@ -8354,14 +8484,14 @@ textarea.form-control-lg {
   --bs-btn-padding-y: 0.5rem;
   --bs-btn-padding-x: 1rem;
   --bs-btn-font-size: 1.25rem;
-  --bs-btn-border-radius: 0.5rem;
+  --bs-btn-border-radius: 50rem;
 }
 
 .btn-sm, .btn-group-sm > .btn {
   --bs-btn-padding-y: 0.25rem;
   --bs-btn-padding-x: 0.5rem;
   --bs-btn-font-size: 0.875rem;
-  --bs-btn-border-radius: 0.25rem;
+  --bs-btn-border-radius: 50rem;
 }
 
 .fade {
@@ -9545,7 +9675,7 @@ textarea.form-control-lg {
 .accordion {
   --bs-accordion-color: #000;
   --bs-accordion-bg: #fff;
-  --bs-accordion-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
+  --bs-accordion-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, transform 0.15s ease-in-out, border-radius 0.15s ease;
   --bs-accordion-border-color: var(--bs-border-color);
   --bs-accordion-border-width: 1px;
   --bs-accordion-border-radius: 0.375rem;
@@ -13379,27 +13509,103 @@ textarea.form-control-lg {
 }
 
 .fs-1 {
-  font-size: calc(1.525rem + 3.3vw) !important;
+  font-size: 0.65rem !important;
 }
 
 .fs-2 {
-  font-size: calc(1.375rem + 1.5vw) !important;
+  font-size: 0.7rem !important;
 }
 
 .fs-3 {
-  font-size: calc(1.3rem + 0.6vw) !important;
+  font-size: 0.8rem !important;
 }
 
 .fs-4 {
-  font-size: calc(1.275rem + 0.3vw) !important;
+  font-size: 0.9rem !important;
 }
 
 .fs-5 {
-  font-size: 1.25rem !important;
+  font-size: 1rem !important;
 }
 
 .fs-6 {
-  font-size: 1rem !important;
+  font-size: 1.25rem !important;
+}
+
+.fs-7 {
+  font-size: calc(1.275rem + 0.3vw) !important;
+}
+
+.fs-8 {
+  font-size: calc(1.3rem + 0.6vw) !important;
+}
+
+.fs-9 {
+  font-size: calc(1.325rem + 0.9vw) !important;
+}
+
+.fs-10 {
+  font-size: calc(1.35rem + 1.2vw) !important;
+}
+
+.fs-11 {
+  font-size: calc(1.375rem + 1.5vw) !important;
+}
+
+.fs-12 {
+  font-size: calc(1.4rem + 1.8vw) !important;
+}
+
+.fs-13 {
+  font-size: calc(1.425rem + 2.1vw) !important;
+}
+
+.fs-14 {
+  font-size: calc(1.45rem + 2.4vw) !important;
+}
+
+.fs-15 {
+  font-size: calc(1.475rem + 2.7vw) !important;
+}
+
+.fs-16 {
+  font-size: calc(1.5rem + 3vw) !important;
+}
+
+.fs-17 {
+  font-size: calc(1.525rem + 3.3vw) !important;
+}
+
+.fs-18 {
+  font-size: calc(1.55rem + 3.6vw) !important;
+}
+
+.fs-19 {
+  font-size: calc(1.575rem + 3.9vw) !important;
+}
+
+.fs-20 {
+  font-size: calc(1.6rem + 4.2vw) !important;
+}
+
+.fs-21 {
+  font-size: calc(1.625rem + 4.5vw) !important;
+}
+
+.fs-22 {
+  font-size: calc(1.65rem + 4.8vw) !important;
+}
+
+.fs-23 {
+  font-size: calc(1.675rem + 5.1vw) !important;
+}
+
+.fs-24 {
+  font-size: calc(1.7rem + 5.4vw) !important;
+}
+
+.fs-25 {
+  font-size: calc(1.725rem + 5.7vw) !important;
 }
 
 .fst-italic {
@@ -17008,17 +17214,62 @@ textarea.form-control-lg {
   }
 }
 @media (min-width: 1200px) {
-  .fs-1 {
-    font-size: 4rem !important;
+  .fs-7 {
+    font-size: 1.5rem !important;
   }
-  .fs-2 {
-    font-size: 2.5rem !important;
-  }
-  .fs-3 {
+  .fs-8 {
     font-size: 1.75rem !important;
   }
-  .fs-4 {
-    font-size: 1.5rem !important;
+  .fs-9 {
+    font-size: 2rem !important;
+  }
+  .fs-10 {
+    font-size: 2.25rem !important;
+  }
+  .fs-11 {
+    font-size: 2.5rem !important;
+  }
+  .fs-12 {
+    font-size: 2.75rem !important;
+  }
+  .fs-13 {
+    font-size: 3rem !important;
+  }
+  .fs-14 {
+    font-size: 3.25rem !important;
+  }
+  .fs-15 {
+    font-size: 3.5rem !important;
+  }
+  .fs-16 {
+    font-size: 3.75rem !important;
+  }
+  .fs-17 {
+    font-size: 4rem !important;
+  }
+  .fs-18 {
+    font-size: 4.25rem !important;
+  }
+  .fs-19 {
+    font-size: 4.5rem !important;
+  }
+  .fs-20 {
+    font-size: 4.75rem !important;
+  }
+  .fs-21 {
+    font-size: 5rem !important;
+  }
+  .fs-22 {
+    font-size: 5.25rem !important;
+  }
+  .fs-23 {
+    font-size: 5.5rem !important;
+  }
+  .fs-24 {
+    font-size: 5.75rem !important;
+  }
+  .fs-25 {
+    font-size: 6rem !important;
   }
 }
 @media print {
@@ -30172,12 +30423,15 @@ outside a container
   margin-right: calc(-50vw + 100%);
 }
 
-.image-wrap {
-  max-height: 800px;
-  overflow: hidden;
+.btn:hover {
+  box-shadow: 0 12px 16px 1px rgba(254, 135, 66, 0.3);
+  transform: translateY(-2px);
 }
-.image-wrap img {
-  width: 100%;
+
+.btn-group > .btn:hover,
+.btn-group-vertical > .btn:hover {
+  box-shadow: none;
+  transform: none;
 }
 
 .object-fit-image {
