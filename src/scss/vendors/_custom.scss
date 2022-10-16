@@ -97,19 +97,31 @@ $accordion-icon-width: 1.875rem; */
 
 
 /* -------------------------------
-Buttons + Forms
-    Button border radius
-
+input-btn-variables
 ---------------------------------*/
-$btn-border-radius: 50rem;
-$btn-border-radius-sm: 50rem;
-$btn-border-radius-lg: 50rem;
-
 /* $input-btn-padding-x: 1.75rem; */
 $input-btn-font-family: $secondary-font;
-$btn-padding-y: map-get($custom-font-sizes, 3);
-$btn-padding-x: 1.5rem;
-$btn-font-size: map-get($custom-font-sizes, 3);
+
+/* -------------------------------
+Buttons + Forms
+---------------------------------*/
+/* Button border radius */
+$btn-border-radius: 50rem;
+$btn-border-radius-sm: $btn-border-radius;
+$btn-border-radius-lg: $btn-border-radius;
+
+$btn-padding-y: map-get($custom-font-sizes, 1); /* 0.65rem */
+$btn-padding-x: 1.2rem;
+$btn-font-size: map-get($custom-font-sizes, 2); /* 0.7rem */
+
+$btn-padding-y-sm: 0.45rem;
+$btn-padding-x-sm: map-get($custom-font-sizes, 4);
+$btn-font-size-sm: 0.6rem;
+
+$btn-padding-y-lg: 0.6rem;
+$btn-padding-x-lg: map-get($custom-font-sizes, 7); /* 1.5rem */
+$btn-font-size-lg: 1rem;
+
 $btn-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, transform .15s ease-in-out;
 
 

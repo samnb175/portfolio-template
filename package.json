@@ -29,6 +29,7 @@
     "cssnano": "^5.1.12",
     "del": "^6.1.1",
     "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
     "gulp-imagemin": "^7.1.0",
     "gulp-postcss": "^9.0.1",
     "gulp-purgecss": "^4.1.3",
