@@ -1,0 +1,95 @@
+.nav-item {
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+}
+
+.nav-custom {
+    background-color:transparent;
+    transition: 0.2s linear;
+}
+
+.nav-custom-active {
+    background-color:white;
+    box-shadow: 5px -1px 12px -5px grey;
+}
+
+.menu-show {
+    background-color:white;
+    box-shadow: 5px -1px 12px -5px grey;
+}
+
+.navbar-toggler {
+    border: none;
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.navbar-toggler-icon {
+    display: inline-block;
+    width: none;
+    height: none;
+    vertical-align: none;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: none;
+    background-size: 0%;
+  }
+
+  .pt-hamburger {
+    width: 24px;
+    height: 24px;
+    position: relative;
+}
+
+.pt-hamburger .bar {
+    padding: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #b6a1a1;
+    display: block;
+    border-radius: 4px;
+    transition: all 0.4s ease-in-out;
+    position: absolute; 
+}
+
+.pt-btn-menu-toggler .bar:first-child {
+    top: 0;
+}
+
+.pt-btn-menu-toggler .bar:nth-child(2),
+.pt-btn-menu-toggler .bar:nth-child(3) {
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+
+.pt-btn-menu-toggler .bar:nth-child(3) {
+    right: 0;
+}
+
+.pt-btn-menu-toggler .bar:last-child {
+    bottom: 0;
+}
+
+.pt-btn-menu-toggler.active .bar:first-child{
+    transform: rotate(45deg);
+    transform-origin: 5%;
+    width: 130%;
+}
+
+.pt-btn-menu-toggler.active .bar:nth-child(2) {
+    transform: translateX(-40px);
+    background-color: transparent;
+}
+
+.pt-btn-menu-toggler.active .bar:nth-child(3) {
+    transform: translateX(40px);
+    background-color: transparent;
+}
+
+.pt-btn-menu-toggler.active .bar:last-child {
+    transform-origin: 4%;
+    transform: rotate(-45deg);
+    width: 130%;
+}
