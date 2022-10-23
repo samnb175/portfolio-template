@@ -103,7 +103,7 @@ input-btn-variables
 $input-btn-font-family: $secondary-font;
 
 /* -------------------------------
-Buttons + Forms
+btn-variables
 ---------------------------------*/
 /* Button border radius */
 $btn-border-radius: 50rem;
@@ -122,7 +122,12 @@ $btn-padding-y-lg: 0.6rem;
 $btn-padding-x-lg: map-get($custom-font-sizes, 7); /* 1.5rem */
 $btn-font-size-lg: 1rem;
 
-$btn-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, transform .15s ease-in-out;
+$btn-transition: color $transSpeed $transTimingFunc, background-color $transSpeed $transTimingFunc, border-color $transSpeed $transTimingFunc, box-shadow $transSpeed $transTimingFunc, transform $transSpeed $transTimingFunc;
+
+/* $btn-hover-bg-shade-amount: 0;
+$btn-hover-border-shade-amount: 0;
+$btn-active-bg-shade-amount: 0;
+$btn-active-border-shade-amount: 0; */
 
 
 /* -------------------------------
@@ -140,6 +145,25 @@ $spacer: 1rem;
 /**
 *   4. Include any default map overrides here
 */
+
+/* -------------------------------
+Custom buttons box shadow
+---------------------------------*/
+@each $color, $value in $theme-colors {
+  @if $color == "light" {
+    $value: map-get($theme-colors, dark);
+  }
+  .btn-#{$color},
+  .btn-outline-#{$color} {
+    &:hover {
+      box-shadow: 0 9px 16px 1px rgba($value, .4);
+    }
+
+    &:focus {
+      box-shadow: 0 3px 6px 0px rgb($value, .55);
+    }
+  }
+}
 
 /* -------------------------------
 Custom Spacing
@@ -172,6 +196,22 @@ $spacers: map-merge($spacers, $custom-spacers);
 /**
 *   6. Include any default utilities api overrides here
 */
+
+/* -------------------------------
+Vertical button group border radius
+---------------------------------*/
+.btn-group-vertical > .btn,
+.btn-group-vertical > .btn-group .dropdown-toggle {
+  @include border-radius(0);
+}
+
+.btn-group-vertical > .btn:first-child,
+.btn-group-vertical > .btn:last-child,
+.btn-group-vertical > .btn-group:first-child .dropdown-toggle,
+.btn-group-vertical > .btn-group:last-child .dropdown-toggle {
+  @include border-radius(.375rem);
+}
+
 /* -------------------------------
 Enable hover and focus state
 on box shadow

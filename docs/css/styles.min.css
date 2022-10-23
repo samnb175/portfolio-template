@@ -71,12 +71,16 @@ input-btn-variables
 ---------------------------------*/
 /* $input-btn-padding-x: 1.75rem; */
 /* -------------------------------
-Buttons + Forms
+btn-variables
 ---------------------------------*/
 /* Button border radius */
 /* 0.65rem */
 /* 0.7rem */
 /* 1.5rem */
+/* $btn-hover-bg-shade-amount: 0;
+$btn-hover-border-shade-amount: 0;
+$btn-active-bg-shade-amount: 0;
+$btn-active-border-shade-amount: 0; */
 /* -------------------------------
 Spacing
 ---------------------------------*/
@@ -86,6 +90,81 @@ Spacing
 /**
 *   4. Include any default map overrides here
 */
+/* -------------------------------
+Custom buttons box shadow
+---------------------------------*/
+.btn-primary:hover,
+.btn-outline-primary:hover {
+  box-shadow: 0 9px 16px 1px rgba(254, 135, 66, 0.4);
+}
+.btn-primary:focus,
+.btn-outline-primary:focus {
+  box-shadow: 0 3px 6px 0px rgba(254, 135, 66, 0.55);
+}
+
+.btn-secondary:hover,
+.btn-outline-secondary:hover {
+  box-shadow: 0 9px 16px 1px rgba(29, 100, 179, 0.4);
+}
+.btn-secondary:focus,
+.btn-outline-secondary:focus {
+  box-shadow: 0 3px 6px 0px rgba(29, 100, 179, 0.55);
+}
+
+.btn-success:hover,
+.btn-outline-success:hover {
+  box-shadow: 0 9px 16px 1px rgba(25, 135, 84, 0.4);
+}
+.btn-success:focus,
+.btn-outline-success:focus {
+  box-shadow: 0 3px 6px 0px rgba(25, 135, 84, 0.55);
+}
+
+.btn-info:hover,
+.btn-outline-info:hover {
+  box-shadow: 0 9px 16px 1px rgba(13, 202, 240, 0.4);
+}
+.btn-info:focus,
+.btn-outline-info:focus {
+  box-shadow: 0 3px 6px 0px rgba(13, 202, 240, 0.55);
+}
+
+.btn-warning:hover,
+.btn-outline-warning:hover {
+  box-shadow: 0 9px 16px 1px rgba(255, 193, 7, 0.4);
+}
+.btn-warning:focus,
+.btn-outline-warning:focus {
+  box-shadow: 0 3px 6px 0px rgba(255, 193, 7, 0.55);
+}
+
+.btn-danger:hover,
+.btn-outline-danger:hover {
+  box-shadow: 0 9px 16px 1px rgba(220, 53, 69, 0.4);
+}
+.btn-danger:focus,
+.btn-outline-danger:focus {
+  box-shadow: 0 3px 6px 0px rgba(220, 53, 69, 0.55);
+}
+
+.btn-light:hover,
+.btn-outline-light:hover {
+  box-shadow: 0 9px 16px 1px rgba(33, 37, 41, 0.4);
+}
+.btn-light:focus,
+.btn-outline-light:focus {
+  box-shadow: 0 3px 6px 0px rgba(33, 37, 41, 0.55);
+}
+
+.btn-dark:hover,
+.btn-outline-dark:hover {
+  box-shadow: 0 9px 16px 1px rgba(33, 37, 41, 0.4);
+}
+.btn-dark:focus,
+.btn-outline-dark:focus {
+  box-shadow: 0 3px 6px 0px rgba(33, 37, 41, 0.55);
+}
+
 /* -------------------------------
 Custom Spacing
 ---------------------------------*/
@@ -173,6 +252,21 @@ $custom-spacers: (
 /**
 *   6. Include any default utilities api overrides here
 */
+/* -------------------------------
+Vertical button group border radius
+---------------------------------*/
+.btn-group-vertical > .btn,
+.btn-group-vertical > .btn-group .dropdown-toggle {
+  border-radius: 0;
+}
+
+.btn-group-vertical > .btn:first-child,
+.btn-group-vertical > .btn:last-child,
+.btn-group-vertical > .btn-group:first-child .dropdown-toggle,
+.btn-group-vertical > .btn-group:last-child .dropdown-toggle {
+  border-radius: 0.375rem;
+}
+
 /* -------------------------------
 Enable hover and focus state
 on box shadow
@@ -7435,7 +7529,7 @@ progress {
   border-width: 0;
   border-inline-end-width: 1px;
   border-radius: 0;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, transform 0.15s ease-in-out;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
   .form-control::file-selector-button {
@@ -8153,7 +8247,7 @@ textarea.form-control-lg {
   border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
   border-radius: var(--bs-btn-border-radius);
   background-color: var(--bs-btn-bg);
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, transform 0.15s ease-in-out;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
   .btn {
@@ -9688,7 +9782,7 @@ textarea.form-control-lg {
 .accordion {
   --bs-accordion-color: #212529;
   --bs-accordion-bg: #fff;
-  --bs-accordion-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, transform 0.15s ease-in-out, border-radius 0.15s ease;
+  --bs-accordion-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out, border-radius 0.15s ease;
   --bs-accordion-border-color: var(--bs-border-color);
   --bs-accordion-border-width: 1px;
   --bs-accordion-border-radius: 0.375rem;
@@ -30445,12 +30539,14 @@ outside a container
 }
 
 .btn:hover {
-  box-shadow: 0 12px 16px 1px rgba(254, 135, 66, 0.3);
   transform: translateY(-2px);
 }
+.btn:focus {
+  transform: translateY(0);
+}
 
-.btn-group > .btn:hover,
-.btn-group-vertical > .btn:hover {
+.btn-group > .btn,
+.btn-group-vertical > .btn {
   box-shadow: none;
   transform: none;
 }

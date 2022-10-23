@@ -5,6 +5,7 @@ const { src, dest, watch, series, parallel } = require('gulp');
 ********************************************************/
 const sass = require('gulp-sass')(require('sass'));
 const postcss = require('gulp-postcss');
+const postscss = require('postcss-scss');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const purge = require('gulp-purgecss');
@@ -85,7 +86,7 @@ function cacheBust() {
 function style() {
   return src(path.src.style)
     .pipe(sourcemaps.init())
-    .pipe(postcss([autoprefixer(),cssnano()]))
+    .pipe(postcss([autoprefixer(),cssnano()], {parser: postscss}))
     // expanded or compressed
     .pipe(sass({outputStyle: SassOutputStyle}).on('error', sass.logError))
     .pipe(rename({ suffix: '.min' }))
