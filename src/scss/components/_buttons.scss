@@ -1,5 +1,9 @@
 @use '../abstracts/variables' as *;
 
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
 .btn {
     &:hover {
         transform: translateY(-2px);
@@ -16,4 +20,22 @@
         box-shadow: none;
         transform: none;
     }
+}
+
+/* -------------------------------
+Vertical button group border radius
+---------------------------------*/
+.btn-group-vertical > .btn,
+.btn-group-vertical > .btn-group .dropdown-toggle {
+  @include border-radius(0);
+}
+
+.btn-group-vertical > .btn:first-child,
+.btn-group-vertical > .btn-group:first-child .dropdown-toggle {
+  @include border-top-radius(.375rem);
+}
+
+.btn-group-vertical > .btn:last-child,
+.btn-group-vertical > .btn-group:last-child .dropdown-toggle {
+  @include border-bottom-radius(.375rem);
 }
