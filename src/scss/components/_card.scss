@@ -1,4 +1,4 @@
-.card-header {
+/* .card-header {
     background-color: transparent;
     border-bottom: 0;
 }
@@ -6,4 +6,13 @@
 .card-footer {
     background-color: transparent;
     border-top: 0;
+} */
+
+.card {
+    .card-link a,
+    .card-link .btn {
+        padding: 0;
+        text-decoration: none;
+        color: inherit;
+    }
 }

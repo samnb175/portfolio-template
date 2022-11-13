@@ -166,6 +166,15 @@ Custom buttons box shadow
 }
 
 /* -------------------------------
+Custom cards link color
+---------------------------------*/
+@each $color, $value in $theme-colors {
+  .card-link-#{$color} {
+    color: $value;
+  }
+}
+
+/* -------------------------------
 Custom Spacing
 ---------------------------------*/
 /***
@@ -320,6 +329,7 @@ $utilities: map-merge(
           map-get(map-get($utilities, "width"), "values"),
           (
             35: 35%,
+            40: 40%,
             65: 65%,
             85: 85%,
           ),
@@ -338,6 +348,30 @@ $utilities: map-merge(
     "object-fit": (
       property: object-fit,
       values: none fill contain cover scale-down,
+    )
+  )
+);
+
+/* --------------------------------------
+Add custom card widths utility classes
+----------------------------------------*/
+$utilities: map-merge(
+  $utilities,
+  (
+    "card-width": (
+      property: width,
+      class: card-w,
+      responsive: true,
+      values: (
+        10: 10rem,
+        18: 18rem,
+        20: 20rem,
+        25: 25rem,
+        30: 30rem,
+        35: 35rem,
+        40: 40rem,
+        50: 50rem,
+      )
     )
   )
 );
