@@ -37,7 +37,7 @@ $min-contrast-ratio: 2.35;
 /* -------------------------------
 Box shadow variables
 ---------------------------------*/
-$box-shadow-lg: 0 1rem 3rem rgba($primary, .4);
+// $box-shadow-lg: 0 1rem 3rem rgba($primary, .4);
 
 
 /* -------------------------------
@@ -71,6 +71,7 @@ $font-sizes: $custom-font-sizes;
 Headings
 ---------------------------------*/
 $headings-font-family: $primary-font;
+$headings-font-weight: $font-weight-600;
 
 
 /* -------------------------------
@@ -106,7 +107,7 @@ $input-btn-font-family: $secondary-font;
 btn-variables
 ---------------------------------*/
 /* Button border radius */
-$btn-border-radius: 50rem;
+$btn-border-radius: $br-round;
 $btn-border-radius-sm: $btn-border-radius;
 $btn-border-radius-lg: $btn-border-radius;
 
@@ -147,6 +148,16 @@ $spacer: 1rem;
 */
 
 /* -------------------------------
+Custom theme colors variable
+---------------------------------*/
+$custom-colors: (
+  "light-100": #fffafa,
+  "light-300": #efefef,
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+/* -------------------------------
 Custom buttons box shadow
 ---------------------------------*/
 @each $color, $value in $theme-colors {
@@ -167,10 +178,25 @@ Custom buttons box shadow
 
 /* -------------------------------
 Custom cards link color
+and box shadow
 ---------------------------------*/
 @each $color, $value in $theme-colors {
   .card-link-#{$color} {
     color: $value;
+
+    a:after,
+    .btn-link:after {
+      background-color: $value;
+    }
+  }
+
+  .card-shadow-#{$color} {
+    box-shadow: 0 0.5rem 1.7rem 0.5rem rgba($value, .1);
+    
+    &:hover,
+    &:focus {
+        box-shadow: 0 1rem 1.3rem 0.5rem rgba($value, .25);
+    }
   }
 }
 
@@ -207,7 +233,9 @@ $spacers: (
   10: $spacer * 4.5,
   11: $spacer * 5,
   12: $spacer * 5.5,
-  13: $spacer * 6
+  13: $spacer * 6,
+  14: $spacer * 8,
+  15: $spacer * 10,
 );
 
 /**
@@ -373,6 +401,41 @@ $utilities: map-merge(
         50: 50rem,
       )
     )
+  )
+);
+
+/* --------------------------------------
+Add custom translate utility classes
+----------------------------------------*/
+$utilities: map-merge(
+  $utilities,
+  (
+    "move-up": (
+      property: transform,
+      class: move-up,
+      state: hover,
+      values: (
+        0: translateY(0),
+        1: translateY(-.5rem),
+        2: translateY(-1rem),
+        3: translateY(-1.5rem),
+        4: translateY(-2rem),
+        5: translateY(-3rem),
+      )      
+    ),
+    "move-down": (
+      property: transform,
+      class: move-down,
+      state: hover,
+      values: (
+        0: translateY(0),
+        1: translateY(.5rem),
+        2: translateY(1rem),
+        3: translateY(1.5rem),
+        4: translateY(2rem),
+        5: translateY(3rem),
+      )
+    ),
   )
 );
 

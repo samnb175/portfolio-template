@@ -91,6 +91,9 @@ Spacing
 *   4. Include any default map overrides here
 */
 /* -------------------------------
+Custom theme colors variable
+---------------------------------*/
+/* -------------------------------
 Custom buttons box shadow
 ---------------------------------*/
 .btn-primary:hover,
@@ -165,39 +168,176 @@ Custom buttons box shadow
   box-shadow: 0 3px 6px 0px rgba(33, 37, 41, 0.55);
 }
 
+.btn-light-100:hover,
+.btn-outline-light-100:hover {
+  box-shadow: 0 9px 16px 1px rgba(255, 250, 250, 0.4);
+}
+.btn-light-100:focus,
+.btn-outline-light-100:focus {
+  box-shadow: 0 3px 6px 0px rgba(255, 250, 250, 0.55);
+}
+
+.btn-light-300:hover,
+.btn-outline-light-300:hover {
+  box-shadow: 0 9px 16px 1px rgba(239, 239, 239, 0.4);
+}
+.btn-light-300:focus,
+.btn-outline-light-300:focus {
+  box-shadow: 0 3px 6px 0px rgba(239, 239, 239, 0.55);
+}
+
 /* -------------------------------
 Custom cards link color
+and box shadow
 ---------------------------------*/
 .card-link-primary {
   color: #fe8742;
+}
+.card-link-primary a:after,
+.card-link-primary .btn-link:after {
+  background-color: #fe8742;
+}
+
+.card-shadow-primary {
+  box-shadow: 0 0.5rem 1.7rem 0.5rem rgba(254, 135, 66, 0.1);
+}
+.card-shadow-primary:hover, .card-shadow-primary:focus {
+  box-shadow: 0 1rem 1.3rem 0.5rem rgba(254, 135, 66, 0.25);
 }
 
 .card-link-secondary {
   color: #1D64B3;
 }
+.card-link-secondary a:after,
+.card-link-secondary .btn-link:after {
+  background-color: #1D64B3;
+}
+
+.card-shadow-secondary {
+  box-shadow: 0 0.5rem 1.7rem 0.5rem rgba(29, 100, 179, 0.1);
+}
+.card-shadow-secondary:hover, .card-shadow-secondary:focus {
+  box-shadow: 0 1rem 1.3rem 0.5rem rgba(29, 100, 179, 0.25);
+}
 
 .card-link-success {
   color: #198754;
+}
+.card-link-success a:after,
+.card-link-success .btn-link:after {
+  background-color: #198754;
+}
+
+.card-shadow-success {
+  box-shadow: 0 0.5rem 1.7rem 0.5rem rgba(25, 135, 84, 0.1);
+}
+.card-shadow-success:hover, .card-shadow-success:focus {
+  box-shadow: 0 1rem 1.3rem 0.5rem rgba(25, 135, 84, 0.25);
 }
 
 .card-link-info {
   color: #0dcaf0;
 }
+.card-link-info a:after,
+.card-link-info .btn-link:after {
+  background-color: #0dcaf0;
+}
+
+.card-shadow-info {
+  box-shadow: 0 0.5rem 1.7rem 0.5rem rgba(13, 202, 240, 0.1);
+}
+.card-shadow-info:hover, .card-shadow-info:focus {
+  box-shadow: 0 1rem 1.3rem 0.5rem rgba(13, 202, 240, 0.25);
+}
 
 .card-link-warning {
   color: #ffc107;
+}
+.card-link-warning a:after,
+.card-link-warning .btn-link:after {
+  background-color: #ffc107;
+}
+
+.card-shadow-warning {
+  box-shadow: 0 0.5rem 1.7rem 0.5rem rgba(255, 193, 7, 0.1);
+}
+.card-shadow-warning:hover, .card-shadow-warning:focus {
+  box-shadow: 0 1rem 1.3rem 0.5rem rgba(255, 193, 7, 0.25);
 }
 
 .card-link-danger {
   color: #dc3545;
 }
+.card-link-danger a:after,
+.card-link-danger .btn-link:after {
+  background-color: #dc3545;
+}
+
+.card-shadow-danger {
+  box-shadow: 0 0.5rem 1.7rem 0.5rem rgba(220, 53, 69, 0.1);
+}
+.card-shadow-danger:hover, .card-shadow-danger:focus {
+  box-shadow: 0 1rem 1.3rem 0.5rem rgba(220, 53, 69, 0.25);
+}
 
 .card-link-light {
   color: #f8f9fa;
 }
+.card-link-light a:after,
+.card-link-light .btn-link:after {
+  background-color: #f8f9fa;
+}
+
+.card-shadow-light {
+  box-shadow: 0 0.5rem 1.7rem 0.5rem rgba(248, 249, 250, 0.1);
+}
+.card-shadow-light:hover, .card-shadow-light:focus {
+  box-shadow: 0 1rem 1.3rem 0.5rem rgba(248, 249, 250, 0.25);
+}
 
 .card-link-dark {
   color: #212529;
+}
+.card-link-dark a:after,
+.card-link-dark .btn-link:after {
+  background-color: #212529;
+}
+
+.card-shadow-dark {
+  box-shadow: 0 0.5rem 1.7rem 0.5rem rgba(33, 37, 41, 0.1);
+}
+.card-shadow-dark:hover, .card-shadow-dark:focus {
+  box-shadow: 0 1rem 1.3rem 0.5rem rgba(33, 37, 41, 0.25);
+}
+
+.card-link-light-100 {
+  color: #fffafa;
+}
+.card-link-light-100 a:after,
+.card-link-light-100 .btn-link:after {
+  background-color: #fffafa;
+}
+
+.card-shadow-light-100 {
+  box-shadow: 0 0.5rem 1.7rem 0.5rem rgba(255, 250, 250, 0.1);
+}
+.card-shadow-light-100:hover, .card-shadow-light-100:focus {
+  box-shadow: 0 1rem 1.3rem 0.5rem rgba(255, 250, 250, 0.25);
+}
+
+.card-link-light-300 {
+  color: #efefef;
+}
+.card-link-light-300 a:after,
+.card-link-light-300 .btn-link:after {
+  background-color: #efefef;
+}
+
+.card-shadow-light-300 {
+  box-shadow: 0 0.5rem 1.7rem 0.5rem rgba(239, 239, 239, 0.1);
+}
+.card-shadow-light-300:hover, .card-shadow-light-300:focus {
+  box-shadow: 0 1rem 1.3rem 0.5rem rgba(239, 239, 239, 0.25);
 }
 
 /* -------------------------------
@@ -253,6 +393,8 @@ $spacers: map-merge($spacers, $custom-spacers); */
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
+  --bs-light-100: #fffafa;
+  --bs-light-300: #efefef;
   --bs-primary-rgb: 254, 135, 66;
   --bs-secondary-rgb: 29, 100, 179;
   --bs-success-rgb: 25, 135, 84;
@@ -261,6 +403,8 @@ $spacers: map-merge($spacers, $custom-spacers); */
   --bs-danger-rgb: 220, 53, 69;
   --bs-light-rgb: 248, 249, 250;
   --bs-dark-rgb: 33, 37, 41;
+  --bs-light-100-rgb: 255, 250, 250;
+  --bs-light-300-rgb: 239, 239, 239;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
@@ -327,7 +471,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-family: "Playfair Display", serif;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.2;
 }
 
@@ -1187,6 +1331,26 @@ progress {
   --bs-gutter-y: 6rem;
 }
 
+.g-14,
+.gx-14 {
+  --bs-gutter-x: 8rem;
+}
+
+.g-14,
+.gy-14 {
+  --bs-gutter-y: 8rem;
+}
+
+.g-15,
+.gx-15 {
+  --bs-gutter-x: 10rem;
+}
+
+.g-15,
+.gy-15 {
+  --bs-gutter-y: 10rem;
+}
+
 @media (min-width: 576px) {
   .col-sm {
     flex: 1 0 0%;
@@ -1418,6 +1582,22 @@ progress {
   .g-sm-13,
 .gy-sm-13 {
     --bs-gutter-y: 6rem;
+  }
+  .g-sm-14,
+.gx-sm-14 {
+    --bs-gutter-x: 8rem;
+  }
+  .g-sm-14,
+.gy-sm-14 {
+    --bs-gutter-y: 8rem;
+  }
+  .g-sm-15,
+.gx-sm-15 {
+    --bs-gutter-x: 10rem;
+  }
+  .g-sm-15,
+.gy-sm-15 {
+    --bs-gutter-y: 10rem;
   }
 }
 @media (min-width: 768px) {
@@ -1652,6 +1832,22 @@ progress {
 .gy-md-13 {
     --bs-gutter-y: 6rem;
   }
+  .g-md-14,
+.gx-md-14 {
+    --bs-gutter-x: 8rem;
+  }
+  .g-md-14,
+.gy-md-14 {
+    --bs-gutter-y: 8rem;
+  }
+  .g-md-15,
+.gx-md-15 {
+    --bs-gutter-x: 10rem;
+  }
+  .g-md-15,
+.gy-md-15 {
+    --bs-gutter-y: 10rem;
+  }
 }
 @media (min-width: 992px) {
   .col-lg {
@@ -1884,6 +2080,22 @@ progress {
   .g-lg-13,
 .gy-lg-13 {
     --bs-gutter-y: 6rem;
+  }
+  .g-lg-14,
+.gx-lg-14 {
+    --bs-gutter-x: 8rem;
+  }
+  .g-lg-14,
+.gy-lg-14 {
+    --bs-gutter-y: 8rem;
+  }
+  .g-lg-15,
+.gx-lg-15 {
+    --bs-gutter-x: 10rem;
+  }
+  .g-lg-15,
+.gy-lg-15 {
+    --bs-gutter-y: 10rem;
   }
 }
 @media (min-width: 1200px) {
@@ -2118,6 +2330,22 @@ progress {
 .gy-xl-13 {
     --bs-gutter-y: 6rem;
   }
+  .g-xl-14,
+.gx-xl-14 {
+    --bs-gutter-x: 8rem;
+  }
+  .g-xl-14,
+.gy-xl-14 {
+    --bs-gutter-y: 8rem;
+  }
+  .g-xl-15,
+.gx-xl-15 {
+    --bs-gutter-x: 10rem;
+  }
+  .g-xl-15,
+.gy-xl-15 {
+    --bs-gutter-y: 10rem;
+  }
 }
 @media (min-width: 1400px) {
   .col-xxl {
@@ -2350,6 +2578,22 @@ progress {
   .g-xxl-13,
 .gy-xxl-13 {
     --bs-gutter-y: 6rem;
+  }
+  .g-xxl-14,
+.gx-xxl-14 {
+    --bs-gutter-x: 8rem;
+  }
+  .g-xxl-14,
+.gy-xxl-14 {
+    --bs-gutter-y: 8rem;
+  }
+  .g-xxl-15,
+.gx-xxl-15 {
+    --bs-gutter-x: 10rem;
+  }
+  .g-xxl-15,
+.gy-xxl-15 {
+    --bs-gutter-y: 10rem;
   }
 }
 .table {
@@ -3561,6 +3805,40 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #212529;
 }
 
+.btn-light-100 {
+  --bs-btn-color: #000;
+  --bs-btn-bg: #fffafa;
+  --bs-btn-border-color: #fffafa;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #fffbfb;
+  --bs-btn-hover-border-color: #fffbfb;
+  --bs-btn-focus-shadow-rgb: 217, 213, 213;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #fffbfb;
+  --bs-btn-active-border-color: #fffbfb;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #000;
+  --bs-btn-disabled-bg: #fffafa;
+  --bs-btn-disabled-border-color: #fffafa;
+}
+
+.btn-light-300 {
+  --bs-btn-color: #000;
+  --bs-btn-bg: #efefef;
+  --bs-btn-border-color: #efefef;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #f1f1f1;
+  --bs-btn-hover-border-color: #f1f1f1;
+  --bs-btn-focus-shadow-rgb: 203, 203, 203;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #f2f2f2;
+  --bs-btn-active-border-color: #f1f1f1;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #000;
+  --bs-btn-disabled-bg: #efefef;
+  --bs-btn-disabled-border-color: #efefef;
+}
+
 .btn-outline-primary {
   --bs-btn-color: #fe8742;
   --bs-btn-border-color: #fe8742;
@@ -3694,6 +3972,40 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: #212529;
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: #212529;
+  --bs-gradient: none;
+}
+
+.btn-outline-light-100 {
+  --bs-btn-color: #fffafa;
+  --bs-btn-border-color: #fffafa;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #fffafa;
+  --bs-btn-hover-border-color: #fffafa;
+  --bs-btn-focus-shadow-rgb: 255, 250, 250;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #fffafa;
+  --bs-btn-active-border-color: #fffafa;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fffafa;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #fffafa;
+  --bs-gradient: none;
+}
+
+.btn-outline-light-300 {
+  --bs-btn-color: #efefef;
+  --bs-btn-border-color: #efefef;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #efefef;
+  --bs-btn-hover-border-color: #efefef;
+  --bs-btn-focus-shadow-rgb: 239, 239, 239;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #efefef;
+  --bs-btn-active-border-color: #efefef;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #efefef;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #efefef;
   --bs-gradient: none;
 }
 
@@ -5309,6 +5621,24 @@ textarea.form-control-lg {
   color: #101214;
 }
 
+.alert-light-100 {
+  --bs-alert-color: #999696;
+  --bs-alert-bg: #fffefe;
+  --bs-alert-border-color: #fffefe;
+}
+.alert-light-100 .alert-link {
+  color: #7a7878;
+}
+
+.alert-light-300 {
+  --bs-alert-color: #8f8f8f;
+  --bs-alert-bg: #fcfcfc;
+  --bs-alert-border-color: #fafafa;
+}
+.alert-light-300 .alert-link {
+  color: #727272;
+}
+
 @keyframes progress-bar-stripes {
   0% {
     background-position-x: 1rem;
@@ -5711,6 +6041,34 @@ textarea.form-control-lg {
   color: #fff;
   background-color: #141619;
   border-color: #141619;
+}
+
+.list-group-item-light-100 {
+  color: #999696;
+  background-color: #fffefe;
+}
+.list-group-item-light-100.list-group-item-action:hover, .list-group-item-light-100.list-group-item-action:focus {
+  color: #999696;
+  background-color: #e6e5e5;
+}
+.list-group-item-light-100.list-group-item-action.active {
+  color: #fff;
+  background-color: #999696;
+  border-color: #999696;
+}
+
+.list-group-item-light-300 {
+  color: #8f8f8f;
+  background-color: #fcfcfc;
+}
+.list-group-item-light-300.list-group-item-action:hover, .list-group-item-light-300.list-group-item-action:focus {
+  color: #8f8f8f;
+  background-color: #e3e3e3;
+}
+.list-group-item-light-300.list-group-item-action.active {
+  color: #fff;
+  background-color: #8f8f8f;
+  border-color: #8f8f8f;
 }
 
 .btn-close {
@@ -7271,6 +7629,16 @@ textarea.form-control-lg {
   background-color: RGBA(33, 37, 41, var(--bs-bg-opacity, 1)) !important;
 }
 
+.text-bg-light-100 {
+  color: #000 !important;
+  background-color: RGBA(255, 250, 250, var(--bs-bg-opacity, 1)) !important;
+}
+
+.text-bg-light-300 {
+  color: #000 !important;
+  background-color: RGBA(239, 239, 239, var(--bs-bg-opacity, 1)) !important;
+}
+
 .link-primary {
   color: #fe8742 !important;
 }
@@ -7325,6 +7693,20 @@ textarea.form-control-lg {
 }
 .link-dark:hover, .link-dark:focus {
   color: #1a1e21 !important;
+}
+
+.link-light-100 {
+  color: #fffafa !important;
+}
+.link-light-100:hover, .link-light-100:focus {
+  color: #fffbfb !important;
+}
+
+.link-light-300 {
+  color: #efefef !important;
+}
+.link-light-300:hover, .link-light-300:focus {
+  color: #f2f2f2 !important;
 }
 
 .ratio {
@@ -7523,6 +7905,9 @@ Add object-fit utility classes
 /* --------------------------------------
 Add custom card widths utility classes
 ----------------------------------------*/
+/* --------------------------------------
+Add custom translate utility classes
+----------------------------------------*/
 .align-baseline {
   vertical-align: baseline !important;
 }
@@ -7660,15 +8045,15 @@ Add custom card widths utility classes
 }
 
 .shadow-lg {
-  box-shadow: 0 1rem 3rem rgba(254, 135, 66, 0.4) !important;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
 }
 
 .shadow-lg-hover:hover {
-  box-shadow: 0 1rem 3rem rgba(254, 135, 66, 0.4) !important;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
 }
 
 .shadow-lg-focus:focus {
-  box-shadow: 0 1rem 3rem rgba(254, 135, 66, 0.4) !important;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
 }
 
 .shadow-none {
@@ -7841,6 +8226,16 @@ Add custom card widths utility classes
 .border-dark {
   --bs-border-opacity: 1;
   border-color: rgba(var(--bs-dark-rgb), var(--bs-border-opacity)) !important;
+}
+
+.border-light-100 {
+  --bs-border-opacity: 1;
+  border-color: rgba(var(--bs-light-100-rgb), var(--bs-border-opacity)) !important;
+}
+
+.border-light-300 {
+  --bs-border-opacity: 1;
+  border-color: rgba(var(--bs-light-300-rgb), var(--bs-border-opacity)) !important;
 }
 
 .border-white {
@@ -8224,6 +8619,14 @@ Add custom card widths utility classes
   margin: 6rem !important;
 }
 
+.m-14 {
+  margin: 8rem !important;
+}
+
+.m-15 {
+  margin: 10rem !important;
+}
+
 .m-auto {
   margin: auto !important;
 }
@@ -8296,6 +8699,16 @@ Add custom card widths utility classes
 .mx-13 {
   margin-right: 6rem !important;
   margin-left: 6rem !important;
+}
+
+.mx-14 {
+  margin-right: 8rem !important;
+  margin-left: 8rem !important;
+}
+
+.mx-15 {
+  margin-right: 10rem !important;
+  margin-left: 10rem !important;
 }
 
 .mx-auto {
@@ -8373,6 +8786,16 @@ Add custom card widths utility classes
   margin-bottom: 6rem !important;
 }
 
+.my-14 {
+  margin-top: 8rem !important;
+  margin-bottom: 8rem !important;
+}
+
+.my-15 {
+  margin-top: 10rem !important;
+  margin-bottom: 10rem !important;
+}
+
 .my-auto {
   margin-top: auto !important;
   margin-bottom: auto !important;
@@ -8432,6 +8855,14 @@ Add custom card widths utility classes
 
 .mt-13 {
   margin-top: 6rem !important;
+}
+
+.mt-14 {
+  margin-top: 8rem !important;
+}
+
+.mt-15 {
+  margin-top: 10rem !important;
 }
 
 .mt-auto {
@@ -8494,6 +8925,14 @@ Add custom card widths utility classes
   margin-right: 6rem !important;
 }
 
+.me-14 {
+  margin-right: 8rem !important;
+}
+
+.me-15 {
+  margin-right: 10rem !important;
+}
+
 .me-auto {
   margin-right: auto !important;
 }
@@ -8552,6 +8991,14 @@ Add custom card widths utility classes
 
 .mb-13 {
   margin-bottom: 6rem !important;
+}
+
+.mb-14 {
+  margin-bottom: 8rem !important;
+}
+
+.mb-15 {
+  margin-bottom: 10rem !important;
 }
 
 .mb-auto {
@@ -8614,6 +9061,14 @@ Add custom card widths utility classes
   margin-left: 6rem !important;
 }
 
+.ms-14 {
+  margin-left: 8rem !important;
+}
+
+.ms-15 {
+  margin-left: 10rem !important;
+}
+
 .ms-auto {
   margin-left: auto !important;
 }
@@ -8672,6 +9127,14 @@ Add custom card widths utility classes
 
 .p-13 {
   padding: 6rem !important;
+}
+
+.p-14 {
+  padding: 8rem !important;
+}
+
+.p-15 {
+  padding: 10rem !important;
 }
 
 .px-0 {
@@ -8744,6 +9207,16 @@ Add custom card widths utility classes
   padding-left: 6rem !important;
 }
 
+.px-14 {
+  padding-right: 8rem !important;
+  padding-left: 8rem !important;
+}
+
+.px-15 {
+  padding-right: 10rem !important;
+  padding-left: 10rem !important;
+}
+
 .py-0 {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
@@ -8814,6 +9287,16 @@ Add custom card widths utility classes
   padding-bottom: 6rem !important;
 }
 
+.py-14 {
+  padding-top: 8rem !important;
+  padding-bottom: 8rem !important;
+}
+
+.py-15 {
+  padding-top: 10rem !important;
+  padding-bottom: 10rem !important;
+}
+
 .pt-0 {
   padding-top: 0 !important;
 }
@@ -8868,6 +9351,14 @@ Add custom card widths utility classes
 
 .pt-13 {
   padding-top: 6rem !important;
+}
+
+.pt-14 {
+  padding-top: 8rem !important;
+}
+
+.pt-15 {
+  padding-top: 10rem !important;
 }
 
 .pe-0 {
@@ -8926,6 +9417,14 @@ Add custom card widths utility classes
   padding-right: 6rem !important;
 }
 
+.pe-14 {
+  padding-right: 8rem !important;
+}
+
+.pe-15 {
+  padding-right: 10rem !important;
+}
+
 .pb-0 {
   padding-bottom: 0 !important;
 }
@@ -8980,6 +9479,14 @@ Add custom card widths utility classes
 
 .pb-13 {
   padding-bottom: 6rem !important;
+}
+
+.pb-14 {
+  padding-bottom: 8rem !important;
+}
+
+.pb-15 {
+  padding-bottom: 10rem !important;
 }
 
 .ps-0 {
@@ -9038,6 +9545,14 @@ Add custom card widths utility classes
   padding-left: 6rem !important;
 }
 
+.ps-14 {
+  padding-left: 8rem !important;
+}
+
+.ps-15 {
+  padding-left: 10rem !important;
+}
+
 .gap-0 {
   gap: 0 !important;
 }
@@ -9092,6 +9607,14 @@ Add custom card widths utility classes
 
 .gap-13 {
   gap: 6rem !important;
+}
+
+.gap-14 {
+  gap: 8rem !important;
+}
+
+.gap-15 {
+  gap: 10rem !important;
 }
 
 .font-monospace {
@@ -9349,6 +9872,16 @@ Add custom card widths utility classes
   color: rgba(var(--bs-dark-rgb), var(--bs-text-opacity)) !important;
 }
 
+.text-light-100 {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-light-100-rgb), var(--bs-text-opacity)) !important;
+}
+
+.text-light-300 {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-light-300-rgb), var(--bs-text-opacity)) !important;
+}
+
 .text-black {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-black-rgb), var(--bs-text-opacity)) !important;
@@ -9438,6 +9971,16 @@ Add custom card widths utility classes
 .bg-dark {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-light-100 {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-light-100-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-light-300 {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-light-300-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-black {
@@ -9618,6 +10161,102 @@ Add custom card widths utility classes
 
 .card-w-50 {
   width: 50rem !important;
+}
+
+.move-up-0 {
+  transform: translateY(0) !important;
+}
+
+.move-up-0-hover:hover {
+  transform: translateY(0) !important;
+}
+
+.move-up-1 {
+  transform: translateY(-0.5rem) !important;
+}
+
+.move-up-1-hover:hover {
+  transform: translateY(-0.5rem) !important;
+}
+
+.move-up-2 {
+  transform: translateY(-1rem) !important;
+}
+
+.move-up-2-hover:hover {
+  transform: translateY(-1rem) !important;
+}
+
+.move-up-3 {
+  transform: translateY(-1.5rem) !important;
+}
+
+.move-up-3-hover:hover {
+  transform: translateY(-1.5rem) !important;
+}
+
+.move-up-4 {
+  transform: translateY(-2rem) !important;
+}
+
+.move-up-4-hover:hover {
+  transform: translateY(-2rem) !important;
+}
+
+.move-up-5 {
+  transform: translateY(-3rem) !important;
+}
+
+.move-up-5-hover:hover {
+  transform: translateY(-3rem) !important;
+}
+
+.move-down-0 {
+  transform: translateY(0) !important;
+}
+
+.move-down-0-hover:hover {
+  transform: translateY(0) !important;
+}
+
+.move-down-1 {
+  transform: translateY(0.5rem) !important;
+}
+
+.move-down-1-hover:hover {
+  transform: translateY(0.5rem) !important;
+}
+
+.move-down-2 {
+  transform: translateY(1rem) !important;
+}
+
+.move-down-2-hover:hover {
+  transform: translateY(1rem) !important;
+}
+
+.move-down-3 {
+  transform: translateY(1.5rem) !important;
+}
+
+.move-down-3-hover:hover {
+  transform: translateY(1.5rem) !important;
+}
+
+.move-down-4 {
+  transform: translateY(2rem) !important;
+}
+
+.move-down-4-hover:hover {
+  transform: translateY(2rem) !important;
+}
+
+.move-down-5 {
+  transform: translateY(3rem) !important;
+}
+
+.move-down-5-hover:hover {
+  transform: translateY(3rem) !important;
 }
 
 @media (min-width: 576px) {
@@ -9831,6 +10470,12 @@ Add custom card widths utility classes
   .m-sm-13 {
     margin: 6rem !important;
   }
+  .m-sm-14 {
+    margin: 8rem !important;
+  }
+  .m-sm-15 {
+    margin: 10rem !important;
+  }
   .m-sm-auto {
     margin: auto !important;
   }
@@ -9889,6 +10534,14 @@ Add custom card widths utility classes
   .mx-sm-13 {
     margin-right: 6rem !important;
     margin-left: 6rem !important;
+  }
+  .mx-sm-14 {
+    margin-right: 8rem !important;
+    margin-left: 8rem !important;
+  }
+  .mx-sm-15 {
+    margin-right: 10rem !important;
+    margin-left: 10rem !important;
   }
   .mx-sm-auto {
     margin-right: auto !important;
@@ -9950,6 +10603,14 @@ Add custom card widths utility classes
     margin-top: 6rem !important;
     margin-bottom: 6rem !important;
   }
+  .my-sm-14 {
+    margin-top: 8rem !important;
+    margin-bottom: 8rem !important;
+  }
+  .my-sm-15 {
+    margin-top: 10rem !important;
+    margin-bottom: 10rem !important;
+  }
   .my-sm-auto {
     margin-top: auto !important;
     margin-bottom: auto !important;
@@ -9996,6 +10657,12 @@ Add custom card widths utility classes
   .mt-sm-13 {
     margin-top: 6rem !important;
   }
+  .mt-sm-14 {
+    margin-top: 8rem !important;
+  }
+  .mt-sm-15 {
+    margin-top: 10rem !important;
+  }
   .mt-sm-auto {
     margin-top: auto !important;
   }
@@ -10040,6 +10707,12 @@ Add custom card widths utility classes
   }
   .me-sm-13 {
     margin-right: 6rem !important;
+  }
+  .me-sm-14 {
+    margin-right: 8rem !important;
+  }
+  .me-sm-15 {
+    margin-right: 10rem !important;
   }
   .me-sm-auto {
     margin-right: auto !important;
@@ -10086,6 +10759,12 @@ Add custom card widths utility classes
   .mb-sm-13 {
     margin-bottom: 6rem !important;
   }
+  .mb-sm-14 {
+    margin-bottom: 8rem !important;
+  }
+  .mb-sm-15 {
+    margin-bottom: 10rem !important;
+  }
   .mb-sm-auto {
     margin-bottom: auto !important;
   }
@@ -10131,6 +10810,12 @@ Add custom card widths utility classes
   .ms-sm-13 {
     margin-left: 6rem !important;
   }
+  .ms-sm-14 {
+    margin-left: 8rem !important;
+  }
+  .ms-sm-15 {
+    margin-left: 10rem !important;
+  }
   .ms-sm-auto {
     margin-left: auto !important;
   }
@@ -10175,6 +10860,12 @@ Add custom card widths utility classes
   }
   .p-sm-13 {
     padding: 6rem !important;
+  }
+  .p-sm-14 {
+    padding: 8rem !important;
+  }
+  .p-sm-15 {
+    padding: 10rem !important;
   }
   .px-sm-0 {
     padding-right: 0 !important;
@@ -10232,6 +10923,14 @@ Add custom card widths utility classes
     padding-right: 6rem !important;
     padding-left: 6rem !important;
   }
+  .px-sm-14 {
+    padding-right: 8rem !important;
+    padding-left: 8rem !important;
+  }
+  .px-sm-15 {
+    padding-right: 10rem !important;
+    padding-left: 10rem !important;
+  }
   .py-sm-0 {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
@@ -10288,6 +10987,14 @@ Add custom card widths utility classes
     padding-top: 6rem !important;
     padding-bottom: 6rem !important;
   }
+  .py-sm-14 {
+    padding-top: 8rem !important;
+    padding-bottom: 8rem !important;
+  }
+  .py-sm-15 {
+    padding-top: 10rem !important;
+    padding-bottom: 10rem !important;
+  }
   .pt-sm-0 {
     padding-top: 0 !important;
   }
@@ -10329,6 +11036,12 @@ Add custom card widths utility classes
   }
   .pt-sm-13 {
     padding-top: 6rem !important;
+  }
+  .pt-sm-14 {
+    padding-top: 8rem !important;
+  }
+  .pt-sm-15 {
+    padding-top: 10rem !important;
   }
   .pe-sm-0 {
     padding-right: 0 !important;
@@ -10372,6 +11085,12 @@ Add custom card widths utility classes
   .pe-sm-13 {
     padding-right: 6rem !important;
   }
+  .pe-sm-14 {
+    padding-right: 8rem !important;
+  }
+  .pe-sm-15 {
+    padding-right: 10rem !important;
+  }
   .pb-sm-0 {
     padding-bottom: 0 !important;
   }
@@ -10413,6 +11132,12 @@ Add custom card widths utility classes
   }
   .pb-sm-13 {
     padding-bottom: 6rem !important;
+  }
+  .pb-sm-14 {
+    padding-bottom: 8rem !important;
+  }
+  .pb-sm-15 {
+    padding-bottom: 10rem !important;
   }
   .ps-sm-0 {
     padding-left: 0 !important;
@@ -10456,6 +11181,12 @@ Add custom card widths utility classes
   .ps-sm-13 {
     padding-left: 6rem !important;
   }
+  .ps-sm-14 {
+    padding-left: 8rem !important;
+  }
+  .ps-sm-15 {
+    padding-left: 10rem !important;
+  }
   .gap-sm-0 {
     gap: 0 !important;
   }
@@ -10497,6 +11228,12 @@ Add custom card widths utility classes
   }
   .gap-sm-13 {
     gap: 6rem !important;
+  }
+  .gap-sm-14 {
+    gap: 8rem !important;
+  }
+  .gap-sm-15 {
+    gap: 10rem !important;
   }
   .text-sm-start {
     text-align: left !important;
@@ -10743,6 +11480,12 @@ Add custom card widths utility classes
   .m-md-13 {
     margin: 6rem !important;
   }
+  .m-md-14 {
+    margin: 8rem !important;
+  }
+  .m-md-15 {
+    margin: 10rem !important;
+  }
   .m-md-auto {
     margin: auto !important;
   }
@@ -10801,6 +11544,14 @@ Add custom card widths utility classes
   .mx-md-13 {
     margin-right: 6rem !important;
     margin-left: 6rem !important;
+  }
+  .mx-md-14 {
+    margin-right: 8rem !important;
+    margin-left: 8rem !important;
+  }
+  .mx-md-15 {
+    margin-right: 10rem !important;
+    margin-left: 10rem !important;
   }
   .mx-md-auto {
     margin-right: auto !important;
@@ -10862,6 +11613,14 @@ Add custom card widths utility classes
     margin-top: 6rem !important;
     margin-bottom: 6rem !important;
   }
+  .my-md-14 {
+    margin-top: 8rem !important;
+    margin-bottom: 8rem !important;
+  }
+  .my-md-15 {
+    margin-top: 10rem !important;
+    margin-bottom: 10rem !important;
+  }
   .my-md-auto {
     margin-top: auto !important;
     margin-bottom: auto !important;
@@ -10908,6 +11667,12 @@ Add custom card widths utility classes
   .mt-md-13 {
     margin-top: 6rem !important;
   }
+  .mt-md-14 {
+    margin-top: 8rem !important;
+  }
+  .mt-md-15 {
+    margin-top: 10rem !important;
+  }
   .mt-md-auto {
     margin-top: auto !important;
   }
@@ -10952,6 +11717,12 @@ Add custom card widths utility classes
   }
   .me-md-13 {
     margin-right: 6rem !important;
+  }
+  .me-md-14 {
+    margin-right: 8rem !important;
+  }
+  .me-md-15 {
+    margin-right: 10rem !important;
   }
   .me-md-auto {
     margin-right: auto !important;
@@ -10998,6 +11769,12 @@ Add custom card widths utility classes
   .mb-md-13 {
     margin-bottom: 6rem !important;
   }
+  .mb-md-14 {
+    margin-bottom: 8rem !important;
+  }
+  .mb-md-15 {
+    margin-bottom: 10rem !important;
+  }
   .mb-md-auto {
     margin-bottom: auto !important;
   }
@@ -11043,6 +11820,12 @@ Add custom card widths utility classes
   .ms-md-13 {
     margin-left: 6rem !important;
   }
+  .ms-md-14 {
+    margin-left: 8rem !important;
+  }
+  .ms-md-15 {
+    margin-left: 10rem !important;
+  }
   .ms-md-auto {
     margin-left: auto !important;
   }
@@ -11087,6 +11870,12 @@ Add custom card widths utility classes
   }
   .p-md-13 {
     padding: 6rem !important;
+  }
+  .p-md-14 {
+    padding: 8rem !important;
+  }
+  .p-md-15 {
+    padding: 10rem !important;
   }
   .px-md-0 {
     padding-right: 0 !important;
@@ -11144,6 +11933,14 @@ Add custom card widths utility classes
     padding-right: 6rem !important;
     padding-left: 6rem !important;
   }
+  .px-md-14 {
+    padding-right: 8rem !important;
+    padding-left: 8rem !important;
+  }
+  .px-md-15 {
+    padding-right: 10rem !important;
+    padding-left: 10rem !important;
+  }
   .py-md-0 {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
@@ -11200,6 +11997,14 @@ Add custom card widths utility classes
     padding-top: 6rem !important;
     padding-bottom: 6rem !important;
   }
+  .py-md-14 {
+    padding-top: 8rem !important;
+    padding-bottom: 8rem !important;
+  }
+  .py-md-15 {
+    padding-top: 10rem !important;
+    padding-bottom: 10rem !important;
+  }
   .pt-md-0 {
     padding-top: 0 !important;
   }
@@ -11241,6 +12046,12 @@ Add custom card widths utility classes
   }
   .pt-md-13 {
     padding-top: 6rem !important;
+  }
+  .pt-md-14 {
+    padding-top: 8rem !important;
+  }
+  .pt-md-15 {
+    padding-top: 10rem !important;
   }
   .pe-md-0 {
     padding-right: 0 !important;
@@ -11284,6 +12095,12 @@ Add custom card widths utility classes
   .pe-md-13 {
     padding-right: 6rem !important;
   }
+  .pe-md-14 {
+    padding-right: 8rem !important;
+  }
+  .pe-md-15 {
+    padding-right: 10rem !important;
+  }
   .pb-md-0 {
     padding-bottom: 0 !important;
   }
@@ -11325,6 +12142,12 @@ Add custom card widths utility classes
   }
   .pb-md-13 {
     padding-bottom: 6rem !important;
+  }
+  .pb-md-14 {
+    padding-bottom: 8rem !important;
+  }
+  .pb-md-15 {
+    padding-bottom: 10rem !important;
   }
   .ps-md-0 {
     padding-left: 0 !important;
@@ -11368,6 +12191,12 @@ Add custom card widths utility classes
   .ps-md-13 {
     padding-left: 6rem !important;
   }
+  .ps-md-14 {
+    padding-left: 8rem !important;
+  }
+  .ps-md-15 {
+    padding-left: 10rem !important;
+  }
   .gap-md-0 {
     gap: 0 !important;
   }
@@ -11409,6 +12238,12 @@ Add custom card widths utility classes
   }
   .gap-md-13 {
     gap: 6rem !important;
+  }
+  .gap-md-14 {
+    gap: 8rem !important;
+  }
+  .gap-md-15 {
+    gap: 10rem !important;
   }
   .text-md-start {
     text-align: left !important;
@@ -11655,6 +12490,12 @@ Add custom card widths utility classes
   .m-lg-13 {
     margin: 6rem !important;
   }
+  .m-lg-14 {
+    margin: 8rem !important;
+  }
+  .m-lg-15 {
+    margin: 10rem !important;
+  }
   .m-lg-auto {
     margin: auto !important;
   }
@@ -11713,6 +12554,14 @@ Add custom card widths utility classes
   .mx-lg-13 {
     margin-right: 6rem !important;
     margin-left: 6rem !important;
+  }
+  .mx-lg-14 {
+    margin-right: 8rem !important;
+    margin-left: 8rem !important;
+  }
+  .mx-lg-15 {
+    margin-right: 10rem !important;
+    margin-left: 10rem !important;
   }
   .mx-lg-auto {
     margin-right: auto !important;
@@ -11774,6 +12623,14 @@ Add custom card widths utility classes
     margin-top: 6rem !important;
     margin-bottom: 6rem !important;
   }
+  .my-lg-14 {
+    margin-top: 8rem !important;
+    margin-bottom: 8rem !important;
+  }
+  .my-lg-15 {
+    margin-top: 10rem !important;
+    margin-bottom: 10rem !important;
+  }
   .my-lg-auto {
     margin-top: auto !important;
     margin-bottom: auto !important;
@@ -11820,6 +12677,12 @@ Add custom card widths utility classes
   .mt-lg-13 {
     margin-top: 6rem !important;
   }
+  .mt-lg-14 {
+    margin-top: 8rem !important;
+  }
+  .mt-lg-15 {
+    margin-top: 10rem !important;
+  }
   .mt-lg-auto {
     margin-top: auto !important;
   }
@@ -11864,6 +12727,12 @@ Add custom card widths utility classes
   }
   .me-lg-13 {
     margin-right: 6rem !important;
+  }
+  .me-lg-14 {
+    margin-right: 8rem !important;
+  }
+  .me-lg-15 {
+    margin-right: 10rem !important;
   }
   .me-lg-auto {
     margin-right: auto !important;
@@ -11910,6 +12779,12 @@ Add custom card widths utility classes
   .mb-lg-13 {
     margin-bottom: 6rem !important;
   }
+  .mb-lg-14 {
+    margin-bottom: 8rem !important;
+  }
+  .mb-lg-15 {
+    margin-bottom: 10rem !important;
+  }
   .mb-lg-auto {
     margin-bottom: auto !important;
   }
@@ -11955,6 +12830,12 @@ Add custom card widths utility classes
   .ms-lg-13 {
     margin-left: 6rem !important;
   }
+  .ms-lg-14 {
+    margin-left: 8rem !important;
+  }
+  .ms-lg-15 {
+    margin-left: 10rem !important;
+  }
   .ms-lg-auto {
     margin-left: auto !important;
   }
@@ -11999,6 +12880,12 @@ Add custom card widths utility classes
   }
   .p-lg-13 {
     padding: 6rem !important;
+  }
+  .p-lg-14 {
+    padding: 8rem !important;
+  }
+  .p-lg-15 {
+    padding: 10rem !important;
   }
   .px-lg-0 {
     padding-right: 0 !important;
@@ -12056,6 +12943,14 @@ Add custom card widths utility classes
     padding-right: 6rem !important;
     padding-left: 6rem !important;
   }
+  .px-lg-14 {
+    padding-right: 8rem !important;
+    padding-left: 8rem !important;
+  }
+  .px-lg-15 {
+    padding-right: 10rem !important;
+    padding-left: 10rem !important;
+  }
   .py-lg-0 {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
@@ -12112,6 +13007,14 @@ Add custom card widths utility classes
     padding-top: 6rem !important;
     padding-bottom: 6rem !important;
   }
+  .py-lg-14 {
+    padding-top: 8rem !important;
+    padding-bottom: 8rem !important;
+  }
+  .py-lg-15 {
+    padding-top: 10rem !important;
+    padding-bottom: 10rem !important;
+  }
   .pt-lg-0 {
     padding-top: 0 !important;
   }
@@ -12153,6 +13056,12 @@ Add custom card widths utility classes
   }
   .pt-lg-13 {
     padding-top: 6rem !important;
+  }
+  .pt-lg-14 {
+    padding-top: 8rem !important;
+  }
+  .pt-lg-15 {
+    padding-top: 10rem !important;
   }
   .pe-lg-0 {
     padding-right: 0 !important;
@@ -12196,6 +13105,12 @@ Add custom card widths utility classes
   .pe-lg-13 {
     padding-right: 6rem !important;
   }
+  .pe-lg-14 {
+    padding-right: 8rem !important;
+  }
+  .pe-lg-15 {
+    padding-right: 10rem !important;
+  }
   .pb-lg-0 {
     padding-bottom: 0 !important;
   }
@@ -12237,6 +13152,12 @@ Add custom card widths utility classes
   }
   .pb-lg-13 {
     padding-bottom: 6rem !important;
+  }
+  .pb-lg-14 {
+    padding-bottom: 8rem !important;
+  }
+  .pb-lg-15 {
+    padding-bottom: 10rem !important;
   }
   .ps-lg-0 {
     padding-left: 0 !important;
@@ -12280,6 +13201,12 @@ Add custom card widths utility classes
   .ps-lg-13 {
     padding-left: 6rem !important;
   }
+  .ps-lg-14 {
+    padding-left: 8rem !important;
+  }
+  .ps-lg-15 {
+    padding-left: 10rem !important;
+  }
   .gap-lg-0 {
     gap: 0 !important;
   }
@@ -12321,6 +13248,12 @@ Add custom card widths utility classes
   }
   .gap-lg-13 {
     gap: 6rem !important;
+  }
+  .gap-lg-14 {
+    gap: 8rem !important;
+  }
+  .gap-lg-15 {
+    gap: 10rem !important;
   }
   .text-lg-start {
     text-align: left !important;
@@ -12567,6 +13500,12 @@ Add custom card widths utility classes
   .m-xl-13 {
     margin: 6rem !important;
   }
+  .m-xl-14 {
+    margin: 8rem !important;
+  }
+  .m-xl-15 {
+    margin: 10rem !important;
+  }
   .m-xl-auto {
     margin: auto !important;
   }
@@ -12625,6 +13564,14 @@ Add custom card widths utility classes
   .mx-xl-13 {
     margin-right: 6rem !important;
     margin-left: 6rem !important;
+  }
+  .mx-xl-14 {
+    margin-right: 8rem !important;
+    margin-left: 8rem !important;
+  }
+  .mx-xl-15 {
+    margin-right: 10rem !important;
+    margin-left: 10rem !important;
   }
   .mx-xl-auto {
     margin-right: auto !important;
@@ -12686,6 +13633,14 @@ Add custom card widths utility classes
     margin-top: 6rem !important;
     margin-bottom: 6rem !important;
   }
+  .my-xl-14 {
+    margin-top: 8rem !important;
+    margin-bottom: 8rem !important;
+  }
+  .my-xl-15 {
+    margin-top: 10rem !important;
+    margin-bottom: 10rem !important;
+  }
   .my-xl-auto {
     margin-top: auto !important;
     margin-bottom: auto !important;
@@ -12732,6 +13687,12 @@ Add custom card widths utility classes
   .mt-xl-13 {
     margin-top: 6rem !important;
   }
+  .mt-xl-14 {
+    margin-top: 8rem !important;
+  }
+  .mt-xl-15 {
+    margin-top: 10rem !important;
+  }
   .mt-xl-auto {
     margin-top: auto !important;
   }
@@ -12776,6 +13737,12 @@ Add custom card widths utility classes
   }
   .me-xl-13 {
     margin-right: 6rem !important;
+  }
+  .me-xl-14 {
+    margin-right: 8rem !important;
+  }
+  .me-xl-15 {
+    margin-right: 10rem !important;
   }
   .me-xl-auto {
     margin-right: auto !important;
@@ -12822,6 +13789,12 @@ Add custom card widths utility classes
   .mb-xl-13 {
     margin-bottom: 6rem !important;
   }
+  .mb-xl-14 {
+    margin-bottom: 8rem !important;
+  }
+  .mb-xl-15 {
+    margin-bottom: 10rem !important;
+  }
   .mb-xl-auto {
     margin-bottom: auto !important;
   }
@@ -12867,6 +13840,12 @@ Add custom card widths utility classes
   .ms-xl-13 {
     margin-left: 6rem !important;
   }
+  .ms-xl-14 {
+    margin-left: 8rem !important;
+  }
+  .ms-xl-15 {
+    margin-left: 10rem !important;
+  }
   .ms-xl-auto {
     margin-left: auto !important;
   }
@@ -12911,6 +13890,12 @@ Add custom card widths utility classes
   }
   .p-xl-13 {
     padding: 6rem !important;
+  }
+  .p-xl-14 {
+    padding: 8rem !important;
+  }
+  .p-xl-15 {
+    padding: 10rem !important;
   }
   .px-xl-0 {
     padding-right: 0 !important;
@@ -12968,6 +13953,14 @@ Add custom card widths utility classes
     padding-right: 6rem !important;
     padding-left: 6rem !important;
   }
+  .px-xl-14 {
+    padding-right: 8rem !important;
+    padding-left: 8rem !important;
+  }
+  .px-xl-15 {
+    padding-right: 10rem !important;
+    padding-left: 10rem !important;
+  }
   .py-xl-0 {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
@@ -13024,6 +14017,14 @@ Add custom card widths utility classes
     padding-top: 6rem !important;
     padding-bottom: 6rem !important;
   }
+  .py-xl-14 {
+    padding-top: 8rem !important;
+    padding-bottom: 8rem !important;
+  }
+  .py-xl-15 {
+    padding-top: 10rem !important;
+    padding-bottom: 10rem !important;
+  }
   .pt-xl-0 {
     padding-top: 0 !important;
   }
@@ -13065,6 +14066,12 @@ Add custom card widths utility classes
   }
   .pt-xl-13 {
     padding-top: 6rem !important;
+  }
+  .pt-xl-14 {
+    padding-top: 8rem !important;
+  }
+  .pt-xl-15 {
+    padding-top: 10rem !important;
   }
   .pe-xl-0 {
     padding-right: 0 !important;
@@ -13108,6 +14115,12 @@ Add custom card widths utility classes
   .pe-xl-13 {
     padding-right: 6rem !important;
   }
+  .pe-xl-14 {
+    padding-right: 8rem !important;
+  }
+  .pe-xl-15 {
+    padding-right: 10rem !important;
+  }
   .pb-xl-0 {
     padding-bottom: 0 !important;
   }
@@ -13149,6 +14162,12 @@ Add custom card widths utility classes
   }
   .pb-xl-13 {
     padding-bottom: 6rem !important;
+  }
+  .pb-xl-14 {
+    padding-bottom: 8rem !important;
+  }
+  .pb-xl-15 {
+    padding-bottom: 10rem !important;
   }
   .ps-xl-0 {
     padding-left: 0 !important;
@@ -13192,6 +14211,12 @@ Add custom card widths utility classes
   .ps-xl-13 {
     padding-left: 6rem !important;
   }
+  .ps-xl-14 {
+    padding-left: 8rem !important;
+  }
+  .ps-xl-15 {
+    padding-left: 10rem !important;
+  }
   .gap-xl-0 {
     gap: 0 !important;
   }
@@ -13233,6 +14258,12 @@ Add custom card widths utility classes
   }
   .gap-xl-13 {
     gap: 6rem !important;
+  }
+  .gap-xl-14 {
+    gap: 8rem !important;
+  }
+  .gap-xl-15 {
+    gap: 10rem !important;
   }
   .text-xl-start {
     text-align: left !important;
@@ -13479,6 +14510,12 @@ Add custom card widths utility classes
   .m-xxl-13 {
     margin: 6rem !important;
   }
+  .m-xxl-14 {
+    margin: 8rem !important;
+  }
+  .m-xxl-15 {
+    margin: 10rem !important;
+  }
   .m-xxl-auto {
     margin: auto !important;
   }
@@ -13537,6 +14574,14 @@ Add custom card widths utility classes
   .mx-xxl-13 {
     margin-right: 6rem !important;
     margin-left: 6rem !important;
+  }
+  .mx-xxl-14 {
+    margin-right: 8rem !important;
+    margin-left: 8rem !important;
+  }
+  .mx-xxl-15 {
+    margin-right: 10rem !important;
+    margin-left: 10rem !important;
   }
   .mx-xxl-auto {
     margin-right: auto !important;
@@ -13598,6 +14643,14 @@ Add custom card widths utility classes
     margin-top: 6rem !important;
     margin-bottom: 6rem !important;
   }
+  .my-xxl-14 {
+    margin-top: 8rem !important;
+    margin-bottom: 8rem !important;
+  }
+  .my-xxl-15 {
+    margin-top: 10rem !important;
+    margin-bottom: 10rem !important;
+  }
   .my-xxl-auto {
     margin-top: auto !important;
     margin-bottom: auto !important;
@@ -13644,6 +14697,12 @@ Add custom card widths utility classes
   .mt-xxl-13 {
     margin-top: 6rem !important;
   }
+  .mt-xxl-14 {
+    margin-top: 8rem !important;
+  }
+  .mt-xxl-15 {
+    margin-top: 10rem !important;
+  }
   .mt-xxl-auto {
     margin-top: auto !important;
   }
@@ -13688,6 +14747,12 @@ Add custom card widths utility classes
   }
   .me-xxl-13 {
     margin-right: 6rem !important;
+  }
+  .me-xxl-14 {
+    margin-right: 8rem !important;
+  }
+  .me-xxl-15 {
+    margin-right: 10rem !important;
   }
   .me-xxl-auto {
     margin-right: auto !important;
@@ -13734,6 +14799,12 @@ Add custom card widths utility classes
   .mb-xxl-13 {
     margin-bottom: 6rem !important;
   }
+  .mb-xxl-14 {
+    margin-bottom: 8rem !important;
+  }
+  .mb-xxl-15 {
+    margin-bottom: 10rem !important;
+  }
   .mb-xxl-auto {
     margin-bottom: auto !important;
   }
@@ -13779,6 +14850,12 @@ Add custom card widths utility classes
   .ms-xxl-13 {
     margin-left: 6rem !important;
   }
+  .ms-xxl-14 {
+    margin-left: 8rem !important;
+  }
+  .ms-xxl-15 {
+    margin-left: 10rem !important;
+  }
   .ms-xxl-auto {
     margin-left: auto !important;
   }
@@ -13823,6 +14900,12 @@ Add custom card widths utility classes
   }
   .p-xxl-13 {
     padding: 6rem !important;
+  }
+  .p-xxl-14 {
+    padding: 8rem !important;
+  }
+  .p-xxl-15 {
+    padding: 10rem !important;
   }
   .px-xxl-0 {
     padding-right: 0 !important;
@@ -13880,6 +14963,14 @@ Add custom card widths utility classes
     padding-right: 6rem !important;
     padding-left: 6rem !important;
   }
+  .px-xxl-14 {
+    padding-right: 8rem !important;
+    padding-left: 8rem !important;
+  }
+  .px-xxl-15 {
+    padding-right: 10rem !important;
+    padding-left: 10rem !important;
+  }
   .py-xxl-0 {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
@@ -13936,6 +15027,14 @@ Add custom card widths utility classes
     padding-top: 6rem !important;
     padding-bottom: 6rem !important;
   }
+  .py-xxl-14 {
+    padding-top: 8rem !important;
+    padding-bottom: 8rem !important;
+  }
+  .py-xxl-15 {
+    padding-top: 10rem !important;
+    padding-bottom: 10rem !important;
+  }
   .pt-xxl-0 {
     padding-top: 0 !important;
   }
@@ -13977,6 +15076,12 @@ Add custom card widths utility classes
   }
   .pt-xxl-13 {
     padding-top: 6rem !important;
+  }
+  .pt-xxl-14 {
+    padding-top: 8rem !important;
+  }
+  .pt-xxl-15 {
+    padding-top: 10rem !important;
   }
   .pe-xxl-0 {
     padding-right: 0 !important;
@@ -14020,6 +15125,12 @@ Add custom card widths utility classes
   .pe-xxl-13 {
     padding-right: 6rem !important;
   }
+  .pe-xxl-14 {
+    padding-right: 8rem !important;
+  }
+  .pe-xxl-15 {
+    padding-right: 10rem !important;
+  }
   .pb-xxl-0 {
     padding-bottom: 0 !important;
   }
@@ -14061,6 +15172,12 @@ Add custom card widths utility classes
   }
   .pb-xxl-13 {
     padding-bottom: 6rem !important;
+  }
+  .pb-xxl-14 {
+    padding-bottom: 8rem !important;
+  }
+  .pb-xxl-15 {
+    padding-bottom: 10rem !important;
   }
   .ps-xxl-0 {
     padding-left: 0 !important;
@@ -14104,6 +15221,12 @@ Add custom card widths utility classes
   .ps-xxl-13 {
     padding-left: 6rem !important;
   }
+  .ps-xxl-14 {
+    padding-left: 8rem !important;
+  }
+  .ps-xxl-15 {
+    padding-left: 10rem !important;
+  }
   .gap-xxl-0 {
     gap: 0 !important;
   }
@@ -14145,6 +15268,12 @@ Add custom card widths utility classes
   }
   .gap-xxl-13 {
     gap: 6rem !important;
+  }
+  .gap-xxl-14 {
+    gap: 8rem !important;
+  }
+  .gap-xxl-15 {
+    gap: 10rem !important;
   }
   .text-xxl-start {
     text-align: left !important;
@@ -27376,7 +28505,9 @@ Breakout class
 Use breakout class to extend element
 outside a container
 ---------------------------------*/
-/* full width breakout */
+/* -------------------------------
+Full width breakout
+---------------------------------*/
 .breakout {
   width: 100vw;
   position: relative;
@@ -27394,6 +28525,10 @@ outside a container
 /* right breakout */
 .breakout-right {
   margin-right: calc(-50vw + 100%);
+}
+
+.section-spacing {
+  margin: 15rem 0;
 }
 
 .btn:hover {
@@ -27438,11 +28573,36 @@ Vertical button group border radius
     background-color: transparent;
     border-top: 0;
 } */
+.card {
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+.card:hover, .card:focus {
+  transform: translateY(-1rem);
+}
 .card .card-link a,
-.card .card-link .btn {
+.card .card-link .btn-link {
   padding: 0;
   text-decoration: none;
   color: inherit;
+  transform: none;
+}
+.card .card-link a::after,
+.card .card-link .btn-link::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  display: block;
+  transition: width 0.3s ease-in-out;
+}
+.card .card-link a:hover::after, .card .card-link a:focus::after,
+.card .card-link .btn-link:hover::after,
+.card .card-link .btn-link:focus::after {
+  width: 100%;
+}
+.card .card-image {
+  padding: 3rem 0;
+  border-radius: 0.375rem;
 }
 
 .object-fit-image {

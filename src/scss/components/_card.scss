@@ -1,3 +1,4 @@
+@use '../abstracts/variables' as *;
 /* .card-header {
     background-color: transparent;
     border-bottom: 0;
@@ -9,10 +10,37 @@
 } */
 
 .card {
+    border: none;
+    transition: all $transSpeed $transTimingFunc;
+
+    &:hover,
+    &:focus {
+        transform: translateY(-1rem);
+    }
+
     .card-link a,
-    .card-link .btn {
+    .card-link .btn-link {
         padding: 0;
         text-decoration: none;
         color: inherit;
+        transform: none;
+
+        &::after {
+            content: "";
+            width: 0;
+            height: 1px;
+            display: block;
+            transition: width $transSpeed $transTimingFunc;
+        }
+
+        &:hover::after,
+        &:focus::after {
+            width: 100%;
+        }
+    }
+
+    .card-image {
+        padding: 3rem 0;
+        border-radius: $br-sm;
     }
 }
