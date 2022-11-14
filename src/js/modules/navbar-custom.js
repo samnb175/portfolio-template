@@ -1,3 +1,5 @@
+import {createHtmlEle} from './functions'
+
 const navbar = document.querySelector('.nav-custom');
 window.onscroll = () => {
   
@@ -10,7 +12,6 @@ window.onscroll = () => {
 
 const headerEle = document.querySelector('.main-menu');
 const burgerMenu = document.getElementById('burgerMenu');
-console.log(typeof burgerMenu.ariaExpanded);
 
 burgerMenu.addEventListener('click', function() {
     if (burgerMenu.ariaExpanded == 'true') {
@@ -21,30 +22,17 @@ burgerMenu.addEventListener('click', function() {
     }
 })
 
-
 document.addEventListener('DOMContentLoaded', function(){
-    console.log('loaded')
     const btnEle = document.getElementsByClassName('pt-btn-menu-toggler')[0];
     if(btnEle) {
-        const ptDiv = document.createElement('div');
-        const ptSpan1 = document.createElement('span');
-        const ptSpan2 = document.createElement('span');
-        const ptSpan3 = document.createElement('span');
-        const ptSpan4 = document.createElement('span');
-        
-        ptDiv.classList.add('pt-hamburger');
-        ptSpan1.classList.add('bar');
-        ptSpan2.classList.add('bar');
-        ptSpan3.classList.add('bar');
-        ptSpan4.classList.add('bar');
-    
-        ptDiv.appendChild(ptSpan1);
-        ptDiv.appendChild(ptSpan2);
-        ptDiv.appendChild(ptSpan3);
-        ptDiv.appendChild(ptSpan4);
-    
-        btnEle.appendChild(ptDiv);
-    
+        const arrOfSpans = createHtmlEle('span', 4, 'bar');
+        const arrOfDiv = createHtmlEle('div', 1, 'pt-hamburger');
+
+        for(let span of arrOfSpans) {
+            arrOfDiv[0].appendChild(span)
+        } 
+
+        btnEle.appendChild(arrOfDiv[0]);    
         btnEle.addEventListener('click', function(){
             btnEle.classList.toggle('active')
         })
