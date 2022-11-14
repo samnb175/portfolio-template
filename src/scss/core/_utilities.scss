@@ -5,7 +5,9 @@ Use breakout class to extend element
 outside a container
 ---------------------------------*/
 
-/* full width breakout */
+/* -------------------------------
+Full width breakout
+---------------------------------*/
 .breakout {
     width: 100vw;
     position: relative;
@@ -23,4 +25,8 @@ outside a container
 /* right breakout */
 .breakout-right {
     margin-right: calc(-50vw + 100%);
+}
+
+.section-spacing {
+    margin: 15rem 0;
 }
