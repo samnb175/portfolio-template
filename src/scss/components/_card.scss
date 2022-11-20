@@ -13,9 +13,18 @@
     border: none;
     transition: all $transSpeed $transTimingFunc;
 
-    &:hover,
+    /* &:hover,
     &:focus {
         transform: translateY(-1rem);
+    } */
+
+    &.card-shadow {
+        box-shadow: 0 0.5rem 1.7rem 0.5rem rgba($dark-color, .1);
+        
+        &:hover,
+        &:focus {
+            box-shadow: 0 1rem 1.3rem 0.5rem rgba($dark-color, .15);
+        }
     }
 
     .card-link a,
@@ -30,6 +39,7 @@
             width: 0;
             height: 1px;
             display: block;
+            background-color: $dark-color;
             transition: width $transSpeed $transTimingFunc;
         }
 
