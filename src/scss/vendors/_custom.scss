@@ -160,6 +160,12 @@ $custom-colors: (
   "black": $black-color,
   "light-100": tint-color($primary-color, 95%),
   "light-300": tint-color($primary-color, 90%),
+  "primary-light-100": tint-color($primary-color, 50%),
+  "primary-light-200": tint-color($primary-color, 25%),
+  "primary-dark": shade-color($primary-color, 70%),
+  "secondary-light-100": tint-color($secondary-color, 50%),
+  "secondary-light-200": tint-color($secondary-color, 25%),
+  "secondary-dark": shade-color($secondary-color, 70%),
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
@@ -410,6 +416,7 @@ $utilities: map-merge(
       responsive: true,
       values: (
         10: 10rem,
+        15: 15rem,
         18: 18rem,
         20: 20rem,
         25: 25rem,
