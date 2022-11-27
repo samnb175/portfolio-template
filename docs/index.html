@@ -5,135 +5,183 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Google Fonts -->
-    <!-- Noto sans, Playfair Display -->
+    <!--********************************************** 
+          Google Fonts:
+          Noto sans, Playfair Display
+      **********************************************-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="./css/styles.min.css?cache_bust=1668445257273" />
+    <link rel="stylesheet" href="./css/styles.min.css?cache_bust=1669567916913" />
 
     <title>Portfolio</title>
   </head>
   <body>
     <header class="fixed-top nav-custom main-menu">
-      <!--********************************************** 
-          Navbar start
-       **********************************************-->
-      <nav class="navbar navbar-expand-lg py-4">
-        <div class="container">
-          <a class="navbar-brand" href="#">Portfolio</a>
-          <button class="pt-btn-menu-toggler navbar-toggler" id="burgerMenu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item px-0 px-lg-3">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item px-0 px-lg-3">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item px-0 px-lg-3">
-                <a class="nav-link" href="#">Works</a>
-              </li>
-              <li class="nav-item px-0 px-lg-3">
-                <a class="nav-link" href="theming-kit.html">Theme kit</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>    
-      <!--********************************************** 
-          Navbar end
-       **********************************************-->
+		<!--********************************************** 
+			Navbar start
+		**********************************************-->
+		<nav class="navbar navbar-expand-lg py-4">
+			<div class="container">
+				<a class="navbar-brand" href="#">Portfolio</a>
+				<button class="pt-btn-menu-toggler navbar-toggler" id="burgerMenu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<li class="nav-item px-0 px-lg-3">
+							<a class="nav-link active" aria-current="page" href="#">Home</a>
+						</li>
+						<li class="nav-item px-0 px-lg-3">
+							<a class="nav-link" href="#">About</a>
+						</li>
+						<li class="nav-item px-0 px-lg-3">
+							<a class="nav-link" href="#">Works</a>
+						</li>
+						<li class="nav-item px-0 px-lg-3">
+							<a class="nav-link" href="theming-kit.html">Theme kit</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>    
+		<!--********************************************** 
+			Navbar end
+		**********************************************-->
     </header>
     
     <main>
-      <!--********************************************** 
-          Hero section start
-       **********************************************-->
-      <section class="hero-section overflow-hidden">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-sm-6">
-              <div class="breakout-left vh-90">
-                <img src="images/img1.jpg" class="object-fit-image" alt="image">
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="ms-7">
-                <h5 class="text-primary">DB Cooper</h5>
-                <h1 class="fw-bolder mb-4">Freelance<br>Designer</h1>
-                <p>I help agencies & brands like Apple, Google and others to turn their ideas into design.</p>
-              </div>
-              <div class="ms-7 mt-5">
-                <button type="button" class="btn btn-primary me-4">hi@dbcooper.com</button>
-                <a class="btn btn-outline-primary" href="#" role="button">See design work</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--********************************************** 
-          Hero section end
-       **********************************************-->
+		<!--********************************************** 
+			Hero section start
+		**********************************************-->
+		<section class="hero-section"><!-- overflow-hidden -->
+			<div class="container-fluid">
+				<div class="row align-items-center">
+					<div class="col-sm-6">
+						<!-- <img src="images/img1.jpg" class="object-fit-image" alt="image"> -->
+						<div class="breakout-left vh-100">
+							<img src="images/img10.jpg" class="object-fit-image" alt="image">
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="ms-7">
+							<h5 class="text-primary">DB Cooper</h5>
+							<h1 class="fw-bolder mb-4">Freelance<br>Designer</h1>
+							<p>I help agencies & brands like Apple, Google and others to turn their ideas into design.</p>
+						</div>
+						<div class="ms-7 mt-5">
+							<button type="button" class="btn btn-primary me-4">hi@dbcooper.com</button>
+							<a class="btn btn-outline-primary" href="#" role="button">See design work</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--********************************************** 
+			Hero section end
+		**********************************************-->
 
-       <!--********************************************** 
-          Skills section start
-       **********************************************-->
-       <section class="skills-section section-spacing pe-4">
-        <div class="container">
-          <h2 class="text-center w-40 mx-auto">Expertise</h2>
-          <p class="text-center w-40 mx-auto mt-4">Design Expertise explores what it takes to become an Expert designer. It examines the perception of expertise in</p>
+		<!--********************************************** 
+			Skills section start
+		**********************************************-->
+		<section class="skills-section section-spacing pe-4">
+			<div class="container">
+				<h2 class="text-center w-40 mx-auto">Expertise</h2>
+				<p class="text-center w-40 mx-auto mt-4">Design Expertise explores what it takes to become an Expert designer. It examines the perception of expertise in</p>
 
-          <div class="d-flex flex-wrap justify-content-center mt-8">
+				<div class="d-flex flex-wrap justify-content-center mt-8">
 
-            <div class="card card-w-18 card-shadow-primary mx-4 mb-8">
-              <div class="card-body px-5">
-                <div class="card-icon py-3">
-                  <span class="fs-8 ms-1 text-primary"><i class="fa-solid fa-compass-drafting"></i></span>
-                </div>
-                <h4 class="card-title">Design</h4>
-                <p class="card-text fs-3 mt-4 mb-2">A plan or drawing produced to show the look and function</p>
-                <div class="card-link card-link-primary mb-3">
-                  <a href="#" class="btn btn-link fs-4">Know more</a>
-                </div>
-              </div>
-            </div>
+					<div class="card card-w-18 card-shadow card-shadow-primary move-up-2-hover mx-4 mb-8">
+						<div class="card-body px-5">
+							<div class="card-icon text-primary py-3">
+								<span class="fs-8 ms-1"><i class="fa-solid fa-compass-drafting"></i></span>
+							</div>
+							<h4 class="card-title">Design</h4>
+							<p class="card-text fs-3 mt-4 mb-2">A plan or drawing produced to show the look and function</p>
+							<div class="card-link card-link-primary mb-3">
+								<a href="#" class="btn btn-link fs-4">Know more</a>
+							</div>
+						</div>
+					</div>
 
-            <div class="card card-w-18 card-shadow-primary mx-4 mb-8 bg-primary">
-              <div class="card-body px-5 text-white">
-                <div class="card-icon py-3">
-                  <span class="fs-8 ms-1 text-white"><i class="fa-solid fa-code"></i></span>
-                </div>
-                <h4 class="card-title">Development</h4>
-                <p class="card-text fs-3 mt-4 mb-2">Development is defined as the process of growth or new</p>
-                <div class="card-link card-link-light mb-3">
-                  <a href="#" class="btn btn-link fs-4">Know more</a>
-                </div>
-              </div>
-            </div>
+					<div class="card card-w-18 card-shadow card-shadow-primary move-up-2-hover bg-primary text-light mx-4 mb-8">
+						<div class="card-body px-5">
+							<div class="card-icon py-3">
+								<span class="fs-8 ms-1"><i class="fa-solid fa-code"></i></span>
+							</div>
+							<h4 class="card-title">Development</h4>
+							<p class="card-text fs-3 mt-4 mb-2">Development is defined as the process of growth or new</p>
+							<div class="card-link mb-3">
+								<a href="#" class="btn btn-link fs-4">Know more</a>
+							</div>
+						</div>
+					</div>
 
-            <div class="card card-w-18 card-shadow-primary mx-4 mb-8">
-              <div class="card-body px-5">
-                <div class="card-icon py-3">
-                  <span class="fs-8 ms-1 text-primary"><i class="fa-solid fa-arrows-to-eye"></i></span>
-                </div>
-                <h4 class="card-title">Branding</h4>
-                <p class="card-text fs-3 mt-4 mb-2">The marketing practice of creating a name, symbol and</p>
-                <div class="card-link card-link-primary mb-3">
-                  <a href="#" class="btn btn-link fs-4">Know more</a>
-                </div>
-              </div>
-            </div>
+					<div class="card card-w-18 card-shadow card-shadow-primary move-up-2-hover mx-4 mb-8">
+						<div class="card-body px-5">
+							<div class="card-icon py-3">
+								<span class="text-primary fs-8 ms-1"><i class="fa-solid fa-arrows-to-eye"></i></span>
+							</div>
+							<h4 class="card-title">Branding</h4>
+							<p class="card-text fs-3 mt-4 mb-2">The marketing practice of creating a name, symbol and</p>
+							<div class="card-link card-link-primary mb-3">
+								<a href="#" class="btn btn-link fs-4">Know more</a>
+							</div>
+						</div>
+					</div>
 
-          </div>
-        </div>
-       </section>
-       <!--********************************************** 
-          Skills section end
-       **********************************************-->
+				</div>
+			</div>
+		</section>
+		<!--********************************************** 
+			Skills section end
+		**********************************************-->
+
+		<!--********************************************** 
+			Record section start
+		**********************************************-->
+		<section class="record-section section-spacing pe-4">
+			<div class="container">
+				<div class="card-record-wrap">
+					<div class="card-record text-primary-dark">
+						<h3 class="card-record__numb">12</h3>
+						<p class="card-record__text">
+							<span>Years</span>
+							<span>Experience</span>
+						</p>
+						<svg viewBox="0 0 89 80" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="card-record__shape text-primary">
+							<path d="M85.5759 65.421C76.0336 84.7231 49.3362 81.4828 30.1917 72.0184C11.0472 62.554 -6.8235 53.2751 2.71882 33.973C12.2611 14.6708 40.5104 -7.04163 59.6548 2.42275C78.7993 11.8871 95.1182 46.1189 85.5759 65.421Z" />
+						</svg>						
+					</div>
+
+					<div class="card-record text-primary-dark">
+						<h3 class="card-record__numb">120</h3>
+						<p class="card-record__text">
+							<span>Satisfied</span>
+							<span>Clients</span>
+						</p>
+						<svg viewBox="0 0 89 80" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="card-record__shape text-primary-light-200">
+							<path d="M85.5759 65.421C76.0336 84.7231 49.3362 81.4828 30.1917 72.0184C11.0472 62.554 -6.8235 53.2751 2.71882 33.973C12.2611 14.6708 40.5104 -7.04163 59.6548 2.42275C78.7993 11.8871 95.1182 46.1189 85.5759 65.421Z" />
+						</svg>						
+					</div>
+
+					<div class="card-record text-primary-dark">
+						<h3 class="card-record__numb">212</h3>
+						<p class="card-record__text">
+							<span>Projects</span>
+							<span>Completed</span>
+						</p>
+						<svg viewBox="0 0 89 80" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="card-record__shape text-primary-light-100">
+							<path d="M85.5759 65.421C76.0336 84.7231 49.3362 81.4828 30.1917 72.0184C11.0472 62.554 -6.8235 53.2751 2.71882 33.973C12.2611 14.6708 40.5104 -7.04163 59.6548 2.42275C78.7993 11.8871 95.1182 46.1189 85.5759 65.421Z" />
+						</svg>						
+					</div>					
+				</div>
+			</div>
+		</section>
+		<!--********************************************** 
+			Record section end
+		**********************************************-->
 
        <!-- <div class="container">
         <div class="breakout my-5 vh-50">
@@ -141,86 +189,169 @@
         </div>
        </div> -->
 
-       <!--********************************************** 
-          Remote work section start
-       **********************************************-->
-        <section class="remote-work section-spacing overflow-hidden">
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-sm-4">
-                <h2>Working Remotely, Based in England</h2>
-                <p class="mt-5 mb-6">For the last few years, I've worked full-time remotely (mostly for clients from the US and Canada). So far, so good. A unique experience with lots of video calls, Slack messages.</p>
-                <a href="#" class="btn btn-primary">More about me</a>
-              </div>
-              <div class="col-sm-6 offset-sm-2">
-                <div class="breakout-right vh-65">
-                  <img src="images/img2.jpg" class="img-fluid" alt="image">
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-       <!--********************************************** 
-          Remote work section end
-       **********************************************-->
+		<!--********************************************** 
+			Remote work section start
+		**********************************************-->
+		<section class="remote-work section-spacing overflow-hidden">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-sm-4">
+						<h2>Working Remotely, Based in England</h2>
+						<p class="mt-5 mb-6">For the last few years, I've worked full-time remotely (mostly for clients from the US and Canada). So far, so good. A unique experience with lots of video calls, Slack messages.</p>
+						<a href="#" class="btn btn-primary">More about me</a>
+					</div>
 
-       <!--********************************************** 
-          Portfolio section start
-       **********************************************-->
-       <section class="remote-work section-spacing overflow-hidden">
-        <div class="container">
-          <h2 class="text-center w-40 mx-auto">Less talk. More Designs</h2>
-          <p class="text-center w-40 mx-auto mt-4">It's time to see work. Here are a few projects, pitch work and design explorations I've done for clients. A sneak peek works</p>
+					<div class="col-sm-6 offset-sm-2">
+						<div class="breakout-right vh-65">
+							<img src="images/img11.jpg" class="img-fluid" alt="image">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--********************************************** 
+			Remote work section end
+		**********************************************-->
 
-          <div class="d-flex flex-wrap justify-content-center mt-8">
+		<!--********************************************** 
+			Portfolio section start
+		**********************************************-->
+		<section class="remote-work section-spacing overflow-hidden">
+			<div class="container">
+				<h2 class="text-center w-40 mx-auto">Less talk. More Designs</h2>
+				<p class="text-center w-40 mx-auto mt-4">It's time to see work. Here are a few projects, pitch work and design explorations I've done for clients. A sneak peek works</p>
 
-            <div class="card card-w-18">
-              <div class="card-body">
-                <div class="card-image bg-light-300">
-                  <img src="images/img5.jpg" class="img-fluid" alt="image">
-                </div>
-                
-                <h4 class="card-title text-center">App Design</h4>
-                <p class="card-text text-center fs-3 mt-4 mb-2">App designers are in charge of making an app look good, while</p>
-              </div>
-            </div>
+				<div class="d-flex flex-wrap justify-content-center mt-8">
 
-            <div class="card card-w-18">
-              <div class="card-body">
-                <div class="card-image bg-light-300">
-                  <img src="images/air-ballons.jpg" class="img-fluid" alt="image">
-                </div>
-                
-                <h4 class="card-title text-center">App Design</h4>
-                <p class="card-text text-center fs-3 mt-4 mb-2">App designers are in charge of making an app look good, while</p>
-              </div>
-            </div>
+					<div class="card card-w-18">
+						<div class="card-body">
+							<div class="card-image bg-light-300">
+								<img src="images/img5.jpg" class="img-fluid" alt="image">
+							</div>
 
-            <div class="card card-w-18">
-              <div class="card-body">
-                <div class="card-image bg-light-300">
-                  <img src="images/img6.jpg" class="img-fluid" alt="image">
-                </div>
-                
-                <h4 class="card-title text-center">App Design</h4>
-                <p class="card-text text-center fs-3 mt-4 mb-2">App designers are in charge of making an app look good, while</p>
-              </div>
-            </div>
+							<h4 class="card-title text-center mt-5">App Design</h4>
+							<p class="card-text text-center fs-3 mt-3 mb-2">App designers are in charge of making an app look good, while</p>
+						</div>
+					</div>
 
-          </div>
+					<div class="card card-w-18">
+						<div class="card-body">
+							<div class="card-image bg-light-300">
+								<img src="images/air-ballons.jpg" class="img-fluid" alt="image">
+							</div>
 
-          <div class="text-center py-5">
-            <a href="#" class="btn btn-primary">See more stuffs</a>
-          </div>
-        </div>
-      </section>
-     <!--********************************************** 
-        Portfolio section end
-     **********************************************-->
+							<h4 class="card-title text-center mt-5">App Design</h4>
+							<p class="card-text text-center fs-3 mt-3 mb-2">App designers are in charge of making an app look good, while</p>
+						</div>
+					</div>
+
+					<div class="card card-w-18">
+						<div class="card-body">
+							<div class="card-image bg-light-300">
+								<img src="images/img6.jpg" class="img-fluid" alt="image">
+							</div>
+
+							<h4 class="card-title text-center mt-5">App Design</h4>
+							<p class="card-text text-center fs-3 mt-3 mb-2">App designers are in charge of making an app look good, while</p>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="text-center py-5">
+					<a href="#" class="btn btn-primary">See more stuffs</a>
+				</div>
+			</div>
+		</section>
+		<!--********************************************** 
+			Portfolio section end
+		**********************************************-->
+
+		<!--********************************************** 
+			Testimonial section start
+		**********************************************-->
+		<section class="testimonial-section section-spacing pe-4">
+			<div class="container">
+
+				<div class="glide" id="testimonials-glide">
+					<div class="glide__track" data-glide-el="track">
+						<ul class="glide__slides">
+							<li class="glide__slide">
+								<div class="card card-testimonial card-w-15">
+									<div class="card-body">
+										<div class="card-profile">
+											<img src="images/profile-img.jpg" alt="image">
+										</div>
+										<h4 class="card-title fs-4 mt-5">Donald Rover</h4>
+										<h5 class="card-subtitle fs-2">CEO, Netflix</h5>
+										<p class="card-text fs-2 mt-3 mb-2">I don’t know what else to say, this is something that you haven’t seen before unique design, lightweight and super outstanding support.</p>													
+									</div>
+									<svg width="225" height="321" viewBox="0 0 225 321" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="card-shape">
+										<path d="M216.667 175.231C195.58 117.251 131.414 101.593 102.293 113C94.6402 93.4656 128.089 39.972 118.766 16.1732C111.799 -1.61071 93.0531 -1.52268 80.6827 3.32327C62.169 10.5758 30.7937 62.7905 18.1856 91.6084C-10.5061 157.188 -4.42563 242.843 44.3897 289.673C100.956 343.938 170.523 313.049 193.681 291.776C223.991 263.933 232.613 215.938 216.667 175.231Z" fill-opacity="0.05"/>
+									</svg>	
+								</div>
+							</li>
+							<li class="glide__slide">
+								<div class="card card-testimonial card-w-15">
+									<div class="card-body">
+										<div class="card-profile">
+											<img src="images/profile-img-2.jpg" alt="image">
+										</div>
+										<h4 class="card-title fs-4 mt-5">Donald Rover</h4>
+										<h5 class="card-subtitle fs-2">CEO, Netflix</h5>
+										<p class="card-text fs-2 mt-3 mb-2">I don’t know what else to say, this is something that you haven’t seen before unique design, lightweight and super outstanding support.</p>													
+									</div>
+									<svg width="225" height="321" viewBox="0 0 225 321" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="card-shape">
+										<path d="M216.667 175.231C195.58 117.251 131.414 101.593 102.293 113C94.6402 93.4656 128.089 39.972 118.766 16.1732C111.799 -1.61071 93.0531 -1.52268 80.6827 3.32327C62.169 10.5758 30.7937 62.7905 18.1856 91.6084C-10.5061 157.188 -4.42563 242.843 44.3897 289.673C100.956 343.938 170.523 313.049 193.681 291.776C223.991 263.933 232.613 215.938 216.667 175.231Z" fill-opacity="0.05"/>
+									</svg>	
+								</div>
+							</li>
+							<li class="glide__slide">
+								<div class="card card-testimonial card-w-15">
+									<div class="card-body">
+										<div class="card-profile">
+											<img src="images/img8.jpeg" alt="image">
+										</div>
+										<h4 class="card-title fs-4 mt-5">Donald Rover</h4>
+										<h5 class="card-subtitle fs-2">CEO, Netflix</h5>
+										<p class="card-text fs-2 mt-3 mb-2">I don’t know what else to say, this is something that you haven’t seen before unique design, lightweight and super outstanding support.</p>													
+									</div>
+									<svg width="225" height="321" viewBox="0 0 225 321" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="card-shape">
+										<path d="M216.667 175.231C195.58 117.251 131.414 101.593 102.293 113C94.6402 93.4656 128.089 39.972 118.766 16.1732C111.799 -1.61071 93.0531 -1.52268 80.6827 3.32327C62.169 10.5758 30.7937 62.7905 18.1856 91.6084C-10.5061 157.188 -4.42563 242.843 44.3897 289.673C100.956 343.938 170.523 313.049 193.681 291.776C223.991 263.933 232.613 215.938 216.667 175.231Z" fill-opacity="0.05"/>
+									</svg>	
+								</div>
+							</li>
+							<li class="glide__slide">
+								<div class="card card-testimonial card-w-15">
+									<div class="card-body">
+										<div class="card-profile">
+											<img src="images/img10.jpg" alt="image">
+										</div>
+										<h4 class="card-title fs-4 mt-5">Donald Rover</h4>
+										<h5 class="card-subtitle fs-2">CEO, Netflix</h5>
+										<p class="card-text fs-2 mt-3 mb-2">I don’t know what else to say, this is something that you haven’t seen before unique design, lightweight and super outstanding support.</p>													
+									</div>
+									<svg width="225" height="321" viewBox="0 0 225 321" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="card-shape">
+										<path d="M216.667 175.231C195.58 117.251 131.414 101.593 102.293 113C94.6402 93.4656 128.089 39.972 118.766 16.1732C111.799 -1.61071 93.0531 -1.52268 80.6827 3.32327C62.169 10.5758 30.7937 62.7905 18.1856 91.6084C-10.5061 157.188 -4.42563 242.843 44.3897 289.673C100.956 343.938 170.523 313.049 193.681 291.776C223.991 263.933 232.613 215.938 216.667 175.231Z" fill-opacity="0.05"/>
+									</svg>	
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="glide__arrows" data-glide-el="controls">
+						<button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+						<button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--********************************************** 
+			Testimonial section end
+		**********************************************-->
     </main>
 
     <footer></footer>
 
-    <script src="./js/script.min.js?cache_bust=1668445257273"></script>
+    <script src="./js/script.min.js?cache_bust=1669567916913"></script>
   </body>
 </html>
