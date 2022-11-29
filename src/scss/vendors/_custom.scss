@@ -486,6 +486,42 @@ $utilities: map-merge(
   )
 );
 
+/* -------------------------------
+Polka-positioning
+---------------------------------*/
+
+$polka-position-values: (
+  0: -5%,
+  50: 50%,
+  100: 105%,
+);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "polka-top": (
+      property: top,
+      class: polka-top,
+      values: $polka-position-values
+    ),
+    "polka-bottom": (
+        property: bottom,
+        class: polka-bottom,
+        values: $polka-position-values
+    ),
+    "polka-start": (
+        property: left,
+        class: polka-start,
+        values: $polka-position-values
+    ),
+    "polka-end": (
+        property: right,
+        class: polka-end,
+        values: $polka-position-values
+    ),
+  )
+);
+
 @import "../../node_modules/bootstrap/scss/utilities/api";
 
 /* Import bootstrap */
