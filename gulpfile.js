@@ -138,6 +138,7 @@ function script(done) {
       entries: [
         'node_modules/@popperjs/core/dist/umd/popper.js',
         'node_modules/bootstrap/dist/js/bootstrap.js',
+        'node_modules/@glidejs/glide/dist/glide.min.js',
         path.folder.script + entry
       ]
     })
