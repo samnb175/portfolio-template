@@ -1,5 +1,18 @@
 @import "../../node_modules/@glidejs/glide/src/assets/sass/glide.core";
+@import "../../node_modules/@glidejs/glide/src/assets/sass/glide.theme";
 
 .glide__slides {
     padding: 3rem;
 }
+
+.glide__slide:not(.glide__slide--active) {
+    .card-testimonial {
+        transform: scale(.9);
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    }
+}
+
+/* .glide__track {
+    max-width: 1000px;
+    margin: 0 auto;
+} */

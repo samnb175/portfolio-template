@@ -6,10 +6,10 @@ const app = new App();
 
 new Glide('#testimonials-glide',{
     type: 'carousel',
-    startAt: 0,
-    perView: 3,
+    // startAt: 0,
+    perView: 4,
     // gap: 15,
-    focusAt: 'center',
-    // wrapperWidth: 200
-    // slideWidth: 240
+    // focusAt: 'center',
+    // wrapperWidth: 200,
+    // slideWidth: 100
 }).mount();

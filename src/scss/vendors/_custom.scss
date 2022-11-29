@@ -368,6 +368,28 @@ $utilities: map-merge(
   )
 );
 
+
+/* -------------------------------
+Add more heights - fixed heights
+---------------------------------*/
+$utilities: map-merge(
+  $utilities,
+  (
+    "height": map-merge(
+      map-get($utilities, "height"),
+      (
+        values: map-merge(
+          map-get(map-get($utilities, "height"), "values"),
+          (
+            fixed-1: 700px,
+            fixed-2: 1000px,
+          ),
+        ),
+      ),
+    ),
+  )
+);
+
 /* -------------------------------
 Add more widths
 ---------------------------------*/
