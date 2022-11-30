@@ -452,7 +452,7 @@ $utilities: map-merge(
 );
 
 /* --------------------------------------
-Add custom translate utility classes
+Add custom transform utility classes
 ----------------------------------------*/
 $utilities: map-merge(
   $utilities,
@@ -481,6 +481,15 @@ $utilities: map-merge(
         3: translateY(1.5rem),
         4: translateY(2rem),
         5: translateY(3rem),
+      )
+    ),
+    "scale-up": (
+      property: transform,
+      class: scale-up,
+      state: hover,
+      values: (
+        0: scale(0),
+        1: scale(1.05),
       )
     ),
   )

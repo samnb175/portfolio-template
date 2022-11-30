@@ -4,12 +4,14 @@ import Glide from '@glidejs/glide';
 
 const app = new App();
 
-new Glide('#testimonials-glide',{
+const testimonialsSlider = new Glide('#testimonials-glide',{
     type: 'carousel',
     // startAt: 0,
-    perView: 4,
-    // gap: 15,
+    perView: 3,
+    // gap: 60,
     // focusAt: 'center',
-    // wrapperWidth: 200,
-    // slideWidth: 100
-}).mount();
+});
+
+testimonialsSlider.mount();
+
+// console.log(testimonialsSlider);

@@ -8795,7 +8795,7 @@ Add object-fit utility classes
 Add custom card widths utility classes
 ----------------------------------------*/
 /* --------------------------------------
-Add custom translate utility classes
+Add custom transform utility classes
 ----------------------------------------*/
 /* -------------------------------
 Polka-positioning
@@ -11256,6 +11256,22 @@ Polka-positioning
 
 .move-down-5-hover:hover {
   transform: translateY(3rem) !important;
+}
+
+.scale-up-0 {
+  transform: scale(0) !important;
+}
+
+.scale-up-0-hover:hover {
+  transform: scale(0) !important;
+}
+
+.scale-up-1 {
+  transform: scale(1.05) !important;
+}
+
+.scale-up-1-hover:hover {
+  transform: scale(1.05) !important;
 }
 
 .polka-top-0 {
@@ -29703,10 +29719,11 @@ readers do not read off random characters that represent icons */
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
 }
 
-/* .glide__track {
-    max-width: 1000px;
-    margin: 0 auto;
-} */
+#testimonials-glide {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
 /* -------------------------------
 Breakout class
 -----------------
@@ -29906,21 +29923,20 @@ Vertical button group border radius
 }
 
 .polka-dot {
-  width: 125px;
-  height: 125px;
+  width: 250px;
+  height: 175px;
   background: radial-gradient(circle, #9c27b0, rgba(229, 56, 53, 0) 25%);
   background-repeat: space;
   background-size: 12px 12px;
   position: absolute;
-  z-index: 1000;
-  transition: transform 1s, z-index 0.2s;
+  z-index: -1;
+  /* transition: transform 1s, z-index 0.2s; */
 }
 
-.polka-dot:hover {
-  transform: perspective(500px) translate3d(1px, 1px, -100px);
-  z-index: 1;
-}
-
+/* .polka-dot:hover {
+    transform: perspective(500px) translate3d(1px, 1px, -100px);
+    z-index: 1;
+} */
 /* Navigation items */
 .nav-item {
   border-bottom: solid 2px #f9f9f9;
