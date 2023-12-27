@@ -10,6 +10,14 @@ const testimonialsSlider = new Glide('#testimonials-glide',{
     perView: 3,
     // gap: 60,
     // focusAt: 'center',
+    breakpoints: {
+        991: {
+          perView: 2
+        },
+        600: {
+          perView: 1
+        }
+    }
 });
 
 testimonialsSlider.mount();
